@@ -1,0 +1,33 @@
+#! /usr/bin/env bash
+set -euo pipefail
+#=========================================================================
+# mflowgen-run
+#=========================================================================
+# Generator : /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/core/build_orchestrator.py
+
+# Pre
+
+rm -f .time_end
+date +%Y-%m%d-%H%M-%S > .time_start
+MFLOWGEN_STEP_HOME=$PWD
+export design_name=GcdUnit
+export clock_period=2.0
+export construct_path=../design/construct.py
+export adk=freepdk-45nm
+export adk_view=view-standard
+
+# Commands
+
+echo "Design name      -- GcdUnit"
+echo "Clock period     -- 2.0"
+echo "ADK              -- freepdk-45nm"
+echo "ADK view         -- view-standard"
+echo
+echo "Constructed from -- ../design/construct.py"
+echo
+
+# Post
+
+cd $MFLOWGEN_STEP_HOME
+date +%Y-%m%d-%H%M-%S > .time_end
+
