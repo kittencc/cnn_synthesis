@@ -1,0 +1,42 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : SramWrapper
+Version: L-2016.03-SP5-5
+Date   : Sat Oct 22 15:45:25 2022
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/5-synopsys-dc-synthesis/inputs/adk/stdcells.db)
+    sram_TT_3p3V_25C_lib (File: /home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/5-synopsys-dc-synthesis/inputs/sram_TT_3p3V_25C.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+SramWrapper                              19.154 1.64e+03 7.51e+03 1.67e+03 100.0
+  add_x_1 (SramWrapper_SramWrapper_DW01_inc_0_0)    3.309    7.099 2.32e+03   12.730   0.8
+  sub_x_2 (SramWrapper_SramWrapper_DW01_dec_J1_0_0)   14.106    8.800 2.71e+03   25.615   1.5
+1

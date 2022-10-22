@@ -1,0 +1,213 @@
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : SramWrapper
+Version: L-2016.03-SP5-5
+Date   : Sat Oct 22 15:45:24 2022
+****************************************
+
+
+  Startpoint: din[0] (input port clocked by ideal_clock)
+  Endpoint: sram (rising edge-triggered flip-flop clocked by ideal_clock)
+  Path Group: REGIN
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  din[0] (in)                              0.01       1.01 r
+  add_x_1/U106/ZN (NAND2_X1)               0.02 *     1.03 f
+  add_x_1/U110/ZN (NOR2_X1)                0.04 *     1.07 r
+  add_x_1/U119/ZN (NAND2_X1)               0.02 *     1.09 f
+  add_x_1/U152/ZN (NOR2_X1)                0.04 *     1.13 r
+  add_x_1/U166/CO (HA_X1)                  0.04 *     1.17 r
+  add_x_1/U167/CO (HA_X1)                  0.04 *     1.20 r
+  add_x_1/U168/CO (HA_X1)                  0.03 *     1.24 r
+  add_x_1/U169/CO (HA_X1)                  0.03 *     1.27 r
+  add_x_1/U170/CO (HA_X1)                  0.03 *     1.31 r
+  add_x_1/U171/CO (HA_X1)                  0.04 *     1.34 r
+  add_x_1/U172/CO (HA_X1)                  0.04 *     1.38 r
+  add_x_1/U173/CO (HA_X1)                  0.04 *     1.42 r
+  add_x_1/U174/CO (HA_X1)                  0.04 *     1.45 r
+  add_x_1/U175/CO (HA_X1)                  0.04 *     1.49 r
+  add_x_1/U176/CO (HA_X1)                  0.04 *     1.52 r
+  add_x_1/U177/CO (HA_X1)                  0.04 *     1.56 r
+  add_x_1/U178/CO (HA_X1)                  0.04 *     1.59 r
+  add_x_1/U179/CO (HA_X1)                  0.04 *     1.63 r
+  add_x_1/U180/CO (HA_X1)                  0.03 *     1.66 r
+  add_x_1/U153/Z (XOR2_X1)                 0.04 *     1.70 r
+  sram/din0[0] (sram)                      0.00 *     1.70 r
+  data arrival time                                   1.70
+
+  clock ideal_clock (rise edge)            2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  sram/clk0 (sram)                         0.00       2.00 r
+  library setup time                      -0.01       1.99
+  data required time                                  1.99
+  -----------------------------------------------------------
+  data required time                                  1.99
+  data arrival time                                  -1.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.29
+
+
+  Startpoint: sram/clk0 (internal path startpoint clocked by ideal_clock)
+  Endpoint: dout[31] (output port clocked by ideal_clock)
+  Path Group: REGOUT
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (fall edge)            1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  input external delay                     0.00       1.00 f
+  sram/clk0 (sram)                         0.00       1.00 f
+  sram/dout0[29] (sram)                    0.09       1.09 f
+  sub_x_2/U146/Z (CLKBUF_X1)               0.04 *     1.13 f
+  sub_x_2/U65/ZN (OR4_X4)                  0.11 *     1.25 f
+  sub_x_2/U66/ZN (NOR2_X4)                 0.03 *     1.27 r
+  sub_x_2/U68/ZN (NAND2_X1)                0.02 *     1.30 f
+  sub_x_2/U69/ZN (NOR2_X2)                 0.03 *     1.32 r
+  sub_x_2/U71/ZN (NAND2_X1)                0.02 *     1.35 f
+  sub_x_2/U72/ZN (NOR2_X2)                 0.03 *     1.37 r
+  sub_x_2/U74/ZN (NAND2_X1)                0.02 *     1.39 f
+  sub_x_2/U75/ZN (NOR2_X2)                 0.03 *     1.42 r
+  sub_x_2/U77/ZN (NAND2_X1)                0.02 *     1.44 f
+  sub_x_2/U78/ZN (NOR2_X2)                 0.03 *     1.47 r
+  sub_x_2/U80/ZN (NAND2_X1)                0.02 *     1.49 f
+  sub_x_2/U81/ZN (NOR2_X2)                 0.03 *     1.52 r
+  sub_x_2/U83/ZN (NAND2_X1)                0.02 *     1.54 f
+  sub_x_2/U84/ZN (NOR2_X2)                 0.03 *     1.57 r
+  sub_x_2/U86/ZN (NAND2_X2)                0.02 *     1.59 f
+  sub_x_2/U87/ZN (NOR2_X2)                 0.03 *     1.62 r
+  sub_x_2/U89/ZN (NAND2_X2)                0.02 *     1.64 f
+  sub_x_2/U90/ZN (NOR2_X2)                 0.03 *     1.68 r
+  sub_x_2/U92/ZN (NAND2_X2)                0.02 *     1.70 f
+  sub_x_2/U93/ZN (NOR2_X2)                 0.03 *     1.73 r
+  sub_x_2/U95/ZN (NAND2_X2)                0.02 *     1.75 f
+  sub_x_2/U96/ZN (NOR2_X2)                 0.03 *     1.78 r
+  sub_x_2/U98/ZN (NAND2_X2)                0.02 *     1.80 f
+  sub_x_2/U99/ZN (NOR2_X2)                 0.03 *     1.84 r
+  sub_x_2/U101/ZN (NAND2_X2)               0.02 *     1.85 f
+  sub_x_2/U102/ZN (NOR2_X2)                0.03 *     1.89 r
+  sub_x_2/U104/ZN (NAND2_X2)               0.02 *     1.91 f
+  sub_x_2/U105/ZN (NOR2_X2)                0.03 *     1.94 r
+  sub_x_2/U106/Z (XOR2_X2)                 0.06 *     2.00 r
+  dout[31] (out)                           0.00 *     2.00 r
+  data arrival time                                   2.00
+
+  clock ideal_clock (rise edge)            2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                    0.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -2.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: csb (input port clocked by ideal_clock)
+  Endpoint: sram (rising edge-triggered flip-flop clocked by ideal_clock)
+  Path Group: REGIN
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  csb (in)                                 0.00       1.00 f
+  sram/csb0 (sram)                         0.00 *     1.00 f
+  data arrival time                                   1.00
+
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sram/clk0 (sram)                         0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (MET)                                         1.00
+
+
+  Startpoint: sram/clk0 (internal path startpoint clocked by ideal_clock)
+  Endpoint: dout[31] (output port clocked by ideal_clock)
+  Path Group: REGOUT
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (fall edge)            1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  input external delay                     0.00       1.00 f
+  sram/clk0 (sram)                         0.00       1.00 f
+  sram/dout0[0] (sram)                     0.09       1.09 r
+  sub_x_2/U106/Z (XOR2_X2)                 0.01 *     1.11 f
+  dout[31] (out)                           0.00 *     1.11 f
+  data arrival time                                   1.11
+
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                    0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -1.11
+  -----------------------------------------------------------
+  slack (MET)                                         1.11
+
+
+    Net: sram_addr[1]
+
+    max_transition         0.04
+  - Transition Time        0.01
+  ------------------------------
+    Slack                  0.03  (MET)
+
+
+    Net: sram_dout[0]
+
+    max_fanout             4.00
+  - Fanout                 1.00
+  ------------------------------
+    Slack                  3.00  (MET)
+
+
+    Net: sram_dout[31]
+
+    max_capacitance        1.67
+  - Capacitance            5.29
+  ------------------------------
+    Slack                 -3.61  (VIOLATED)
+
+
+    Net: sram_dout[6]
+
+    Capacitance            1.13
+  - min_capacitance        0.05
+  ------------------------------
+    Slack                  1.08  (MET)
+
+
+    Design: SramWrapper
+
+    max_leakage_power          0.00
+  - Current Leakage Power   7511.97
+  ----------------------------------
+    Slack                  -7511.97  (VIOLATED)
+
+
+Min pulse width constraints
+
+                       Required      Actual
+  Pin                pulse width   pulse width   Slack           Scenario
+--------------------------------------------------------------------------------
+  sram/clk0(low)      0.01          1.00          0.99 (MET)
+
+1

@@ -1,0 +1,682 @@
+--2022-10-22 15:44:19--  https://github.com/mflowgen/freepdk-45nm/archive/master.zip
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mflowgen/freepdk-45nm/zip/refs/heads/master [following]
+--2022-10-22 15:44:19--  https://codeload.github.com/mflowgen/freepdk-45nm/zip/refs/heads/master
+Resolving codeload.github.com (codeload.github.com)... 192.30.255.121
+Connecting to codeload.github.com (codeload.github.com)|192.30.255.121|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/zip]
+Saving to: ‘master.zip’
+
+     0K .......... .......... .......... .......... ..........  288K
+    50K .......... .......... .......... .......... .......... 2.49M
+   100K .......... .......... .......... .......... .......... 16.2M
+   150K .......... .......... .......... .......... .......... 2.93M
+   200K .......... .......... .......... .......... .......... 10.3M
+   250K .......... .......... .......... .......... .......... 14.1M
+   300K .......... .......... .......... .......... .......... 2.86M
+   350K .......... .......... .......... .......... .......... 8.25M
+   400K .......... .......... .......... .......... .......... 11.0M
+   450K .......... .......... .......... .......... .......... 14.1M
+   500K .......... .......... .......... .......... .......... 23.6M
+   550K .......... .......... .......... .......... .......... 32.1M
+   600K .......... .......... .......... .......... .......... 30.0M
+   650K .......... .......... .......... .......... .......... 27.6M
+   700K .......... .......... .......... .......... .......... 3.49M
+   750K .......... .......... .......... .......... .......... 18.0M
+   800K .......... .......... .......... .......... .......... 27.5M
+   850K .......... .......... .......... .......... .......... 25.6M
+   900K .......... .......... .......... .......... .......... 36.5M
+   950K .......... .......... .......... .......... .......... 32.7M
+  1000K .......... .......... .......... .......... .......... 36.8M
+  1050K .......... .......... .......... .......... .......... 17.1M
+  1100K .......... .......... .......... .......... .......... 13.1M
+  1150K .......... .......... .......... .......... .......... 10.1M
+  1200K .......... .......... .......... .......... .......... 9.43M
+  1250K .......... .......... .......... .......... .......... 18.2M
+  1300K .......... .......... .......... .......... .......... 29.9M
+  1350K .......... .......... .......... .......... .......... 34.5M
+  1400K .......... .......... .......... .......... .......... 35.2M
+  1450K .......... .......... .......... .......... .......... 29.9M
+  1500K .......... .......... .......... .......... .......... 30.6M
+  1550K .......... .......... .......... .......... .......... 14.5M
+  1600K .......... .......... .......... .......... .......... 23.6M
+  1650K .......... .......... .......... .......... .......... 23.4M
+  1700K .......... .......... .......... .......... .......... 29.4M
+  1750K .......... .......... .......... .......... .......... 15.7M
+  1800K .......... .......... .......... .......... .......... 28.2M
+  1850K .......... .......... .......... .......... .......... 21.5M
+  1900K .......... .......... .......... .......... .......... 25.3M
+  1950K .......... .......... .......... .......... .......... 8.61M
+  2000K .......... .......... .......... .......... .......... 22.3M
+  2050K .......... .......... .......... .......... .......... 35.3M
+  2100K .......... .......... .......... .......... .......... 35.2M
+  2150K .......... .......... .......... .......... .......... 16.8M
+  2200K .......... .......... .......... .......... .......... 34.6M
+  2250K .......... .......... .......... .......... .......... 30.2M
+  2300K .......... .......... .......... .......... .......... 34.8M
+  2350K .......... .......... .......... .......... .......... 36.1M
+  2400K .......... .......... .......... .......... .......... 28.0M
+  2450K .......... .......... .......... .......... .......... 11.7M
+  2500K .......... .......... .......... .......... .......... 31.3M
+  2550K .......... .......... .......... .......... .......... 35.7M
+  2600K .......... .......... .......... .......... .......... 35.5M
+  2650K .......... .......... .......... .......... .......... 37.1M
+  2700K .......... .......... .......... .......... .......... 36.3M
+  2750K .......... .......... .......... .......... .......... 35.9M
+  2800K .......... .......... .......... .......... .......... 28.5M
+  2850K .......... .......... .......... .......... .......... 36.3M
+  2900K .......... .......... .......... .......... .......... 30.1M
+  2950K .......... .......... .......... .......... .......... 34.8M
+  3000K .......... .......... .......... .......... .......... 35.6M
+  3050K .......... .......... .......... .......... .......... 36.4M
+  3100K .......... .......... .......... .......... .......... 34.7M
+  3150K .......... .......... .......... .......... .......... 35.2M
+  3200K .......... .......... .......... .......... .......... 29.2M
+  3250K .......... .......... .......... .......... .......... 36.5M
+  3300K .......... .......... .......... .......... .......... 37.0M
+  3350K .......... .......... .......... .......... .......... 36.6M
+  3400K .......... .......... .......... .......... .......... 30.9M
+  3450K .......... .......... .......... .......... .......... 37.6M
+  3500K .......... .......... .......... .......... .......... 33.4M
+  3550K .......... .......... .......... .......... .......... 34.8M
+  3600K .......... .......... .......... .......... .......... 1.07M
+  3650K .......... .......... .......... .......... .......... 10.7M
+  3700K .......... .......... .......... .......... .......... 11.1M
+  3750K .......... .......... .......... .......... .......... 10.5M
+  3800K .......... .......... .......... .......... .......... 33.3M
+  3850K .......... .......... .......... .......... .......... 35.0M
+  3900K .......... .......... .......... .......... .......... 33.4M
+  3950K .......... .......... .......... .......... .......... 36.1M
+  4000K .......... .......... .......... .......... .......... 37.3M
+  4050K .......... .......... .......... .......... .......... 1.23M
+  4100K .......... .......... .......... .......... .......... 7.11M
+  4150K .......... .......... .......... .......... .......... 9.90M
+  4200K .......... .......... .......... .......... .......... 11.1M
+  4250K .......... .......... .......... .......... .......... 30.9M
+  4300K .......... .......... .......... .......... .......... 32.0M
+  4350K .......... .......... .......... .......... .......... 24.0M
+  4400K .......... .......... .......... .......... .......... 23.5M
+  4450K .......... .......... .......... .......... .......... 21.8M
+  4500K .......... .......... .......... .......... .......... 17.3M
+  4550K .......... .......... .......... .......... .......... 23.5M
+  4600K .......... .......... .......... .......... .......... 25.8M
+  4650K .......... .......... .......... .......... .......... 21.9M
+  4700K .......... .......... .......... .......... .......... 17.7M
+  4750K .......... .......... .......... .......... .......... 20.5M
+  4800K .......... .......... .......... .......... .......... 36.8M
+  4850K .......... .......... .......... .......... ..........  150K
+  4900K .......... .......... .......... .......... .......... 4.49M
+  4950K .......... .......... .......... .......... .......... 11.4M
+  5000K .......... .......... .......... .......... .......... 9.76M
+  5050K .......... .......... .......... .......... .......... 7.82M
+  5100K .......... .......... .......... .......... .......... 34.0M
+  5150K .......... .......... .......... .......... .......... 37.2M
+  5200K .......... .......... .......... .......... .......... 31.4M
+  5250K .......... .......... .......... .......... .......... 35.0M
+  5300K .......... .......... .......... .......... .......... 37.4M
+  5350K .......... .......... .......... .......... .......... 33.8M
+  5400K .......... .......... .......... .......... .......... 36.0M
+  5450K .......... .......... .......... .......... .......... 29.2M
+  5500K .......... .......... .......... .......... .......... 37.2M
+  5550K .......... .......... .......... .......... .......... 33.0M
+  5600K .......... .......... .......... .......... .......... 34.7M
+  5650K .......... .......... .......... .......... .......... 34.2M
+  5700K .......... .......... .......... .......... .......... 38.1M
+  5750K .......... .......... .......... .......... .......... 32.1M
+  5800K .......... .......... .......... .......... .......... 34.7M
+  5850K .......... .......... .......... .......... .......... 29.5M
+  5900K .......... .......... .......... .......... .......... 32.8M
+  5950K .......... .......... .......... .......... .......... 37.1M
+  6000K .......... .......... .......... .......... .......... 34.9M
+  6050K .......... .......... .......... .......... .......... 36.7M
+  6100K .......... .......... .......... .......... .......... 36.9M
+  6150K .......... .......... .......... .......... .......... 37.2M
+  6200K .......... .......... .......... .......... .......... 27.4M
+  6250K .......... .......... .......... .......... .......... 16.6M
+  6300K .......... .......... .......... .......... .......... 15.1M
+  6350K .......... .......... .......... .......... .......... 16.2M
+  6400K .......... .......... .......... .......... .......... 31.2M
+  6450K .......... .......... .......... .......... .......... 36.5M
+  6500K .......... .......... .......... .......... .......... 36.9M
+  6550K .......... .......... .......... .......... .......... 37.2M
+  6600K .......... .......... .......... .......... .......... 26.7M
+  6650K .......... .......... .......... .......... .......... 37.6M
+  6700K .......... .......... .......... .......... .......... 36.5M
+  6750K .......... .......... .......... .......... .......... 31.0M
+  6800K .......... .......... .......... .......... .......... 19.0M
+  6850K .......... .......... .......... .......... .......... 11.6M
+  6900K .......... .......... .......... .......... .......... 18.7M
+  6950K .......... .......... .......... .......... .......... 32.4M
+  7000K .......... .......... .......... .......... .......... 27.1M
+  7050K .......... .......... .......... .......... .......... 37.3M
+  7100K .......... .......... .......... .......... .......... 35.6M
+  7150K .......... .......... .......... .......... .......... 35.3M
+  7200K .......... .......... .......... .......... .......... 37.6M
+  7250K .......... .......... .......... .......... .......... 34.5M
+  7300K .......... .......... .......... .......... .......... 23.5M
+  7350K .......... .......... .......... .......... .......... 16.0M
+  7400K .......... .......... .......... .......... .......... 27.2M
+  7450K .......... .......... .......... .......... .......... 35.9M
+  7500K .......... .......... .......... .......... .......... 35.4M
+  7550K .......... .......... .......... .......... .......... 35.0M
+  7600K .......... .......... .......... .......... .......... 37.5M
+  7650K .......... .......... .......... .......... .......... 37.3M
+  7700K .......... .......... .......... .......... .......... 36.7M
+  7750K .......... .......... .......... .......... .......... 29.5M
+  7800K .......... .......... .......... .......... .......... 37.2M
+  7850K .......... .......... .......... .......... .......... 36.9M
+  7900K .......... .......... .......... .......... .......... 36.6M
+  7950K .......... .......... .......... .......... .......... 30.9M
+  8000K .......... .......... .......... .......... .......... 18.5M
+  8050K .......... .......... .......... .......... .......... 16.4M
+  8100K .......... .......... .......... .......... .......... 33.4M
+  8150K .......... .......... .......... .......... .......... 29.0M
+  8200K .......... .......... .......... .......... .......... 37.5M
+  8250K .......... .......... .......... .......... .......... 38.0M
+  8300K .......... .......... .......... .......... .......... 36.9M
+  8350K .......... .......... .......... .......... .......... 34.7M
+  8400K .......... .......... .......... .......... .......... 37.4M
+  8450K .......... .......... .......... .......... .......... 37.3M
+  8500K .......... .......... .......... .......... .......... 36.7M
+  8550K .......... .......... .......... .......... .......... 27.1M
+  8600K .......... .......... .......... .......... .......... 20.7M
+  8650K .......... .......... .......... .......... .......... 18.1M
+  8700K .......... .......... .......... .......... .......... 24.6M
+  8750K .......... .......... .......... .......... .......... 35.1M
+  8800K .......... .......... .......... .......... .......... 36.8M
+  8850K .......... .......... .......... .......... .......... 36.6M
+  8900K .......... .......... .......... .......... .......... 37.9M
+  8950K .......... .......... .......... .......... .......... 29.0M
+  9000K .......... .......... .......... .......... .......... 37.3M
+  9050K .......... .......... .......... .......... .......... 34.1M
+  9100K .......... .......... .......... .......... .......... 31.2M
+  9150K .......... .......... .......... .......... .......... 32.4M
+  9200K .......... .......... .......... .......... .......... 19.6M
+  9250K .......... .......... .......... .......... .......... 21.1M
+  9300K .......... .......... .......... .......... .......... 17.0M
+  9350K .......... .......... .......... .......... .......... 33.0M
+  9400K .......... .......... .......... .......... .......... 35.9M
+  9450K .......... .......... .......... .......... .......... 33.5M
+  9500K .......... .......... .......... .......... .......... 31.1M
+  9550K .......... .......... .......... .......... .......... 35.0M
+  9600K .......... .......... .......... .......... .......... 36.6M
+  9650K .......... .......... .......... .......... .......... 37.1M
+  9700K .......... .......... .......... .......... .......... 28.2M
+  9750K .......... .......... .......... .......... .......... 31.2M
+  9800K .......... .......... .......... .......... .......... 27.3M
+  9850K .......... .......... .......... .......... .......... 18.9M
+  9900K .......... .......... .......... .......... .......... 19.3M
+  9950K .......... .......... .......... .......... .......... 35.2M
+ 10000K .......... .......... .......... .......... .......... 36.4M
+ 10050K .......... .......... .......... .......... .......... 33.9M
+ 10100K .......... .......... .......... .......... .......... 28.3M
+ 10150K .......... .......... .......... .......... .......... 33.0M
+ 10200K .......... .......... .......... .......... .......... 37.3M
+ 10250K .......... .......... .......... .......... .......... 35.6M
+ 10300K .......... .......... .......... .......... .......... 35.0M
+ 10350K .......... .......... .......... .......... .......... 34.1M
+ 10400K .......... .......... .......... .......... .......... 20.3M
+ 10450K .......... .......... .......... .......... .......... 15.7M
+ 10500K .......... .......... .......... .......... .......... 23.3M
+ 10550K .......... .......... .......... .......... .......... 35.7M
+ 10600K .......... .......... .......... .......... .......... 37.5M
+ 10650K .......... .......... .......... .......... .......... 34.8M
+ 10700K .......... .......... .......... .......... .......... 37.8M
+ 10750K .......... .......... .......... .......... .......... 33.2M
+ 10800K .......... .......... .......... .......... .......... 36.7M
+ 10850K .......... .......... .......... .......... .......... 27.8M
+ 10900K .......... .......... .......... .......... .......... 37.0M
+ 10950K .......... .......... .......... .......... .......... 37.7M
+ 11000K .......... .......... .......... .......... .......... 36.3M
+ 11050K .......... .......... .......... .......... .......... 35.2M
+ 11100K .......... .......... .......... .......... .......... 34.8M
+ 11150K .......... .......... .......... .......... .......... 34.1M
+ 11200K .......... .......... .......... .......... .......... 28.8M
+ 11250K .......... .......... .......... .......... .......... 34.8M
+ 11300K .......... .......... .......... .......... .......... 37.6M
+ 11350K .......... .......... .......... .......... .......... 35.8M
+ 11400K .......... .......... .......... .......... .......... 29.4M
+ 11450K .......... .......... .......... .......... .......... 34.3M
+ 11500K .......... .......... .......... .......... .......... 34.4M
+ 11550K .......... .......... .......... .......... .......... 37.8M
+ 11600K .......... .......... .......... .......... .......... 27.3M
+ 11650K .......... .......... .......... .......... .......... 36.4M
+ 11700K .......... .......... .......... .......... .......... 35.9M
+ 11750K .......... .......... .......... .......... .......... 35.3M
+ 11800K .......... .......... .......... .......... .......... 33.5M
+ 11850K .......... .......... .......... .......... .......... 34.5M
+ 11900K .......... .......... .......... .......... .......... 36.6M
+ 11950K .......... .......... .......... .......... .......... 35.0M
+ 12000K .......... .......... .......... .......... .......... 29.1M
+ 12050K .......... .......... .......... .......... .......... 37.4M
+ 12100K .......... .......... .......... .......... .......... 35.2M
+ 12150K .......... .......... .......... .......... .......... 36.5M
+ 12200K .......... .......... .......... .......... .......... 32.6M
+ 12250K .......... .......... .......... .......... .......... 36.4M
+ 12300K .......... .......... .......... .......... ..........  421K
+ 12350K .......... .......... .......... .......... .......... 19.6M
+ 12400K .......... .......... .......... .......... .......... 18.4M
+ 12450K .......... .......... .......... .......... .......... 34.1M
+ 12500K .......... .......... .......... .......... .......... 37.4M
+ 12550K .......... .......... .......... .......... .......... 33.6M
+ 12600K .......... .......... .......... .......... .......... 28.7M
+ 12650K .......... .......... .......... .......... .......... 34.9M
+ 12700K .......... .......... .......... .......... .......... 36.6M
+ 12750K .......... .......... .......... .......... .......... 37.3M
+ 12800K .......... .......... .......... .......... .......... 34.5M
+ 12850K .......... .......... .......... .......... .......... 35.8M
+ 12900K .......... .......... .......... .......... .......... 25.6M
+ 12950K .......... .......... .......... .......... .......... 28.9M
+ 13000K .......... .......... .......... .......... .......... 13.1M
+ 13050K .......... .......... .......... .......... .......... 25.2M
+ 13100K .......... .......... .......... .......... .......... 36.2M
+ 13150K .......... .......... .......... .......... .......... 33.6M
+ 13200K .......... .......... .......... .......... .......... 35.6M
+ 13250K .......... .......... .......... .......... .......... 36.1M
+ 13300K .......... .......... .......... .......... .......... 36.2M
+ 13350K .......... .......... .......... .......... .......... 36.8M
+ 13400K .......... .......... .......... .......... .......... 29.0M
+ 13450K .......... .......... .......... .......... .......... 31.4M
+ 13500K .......... .......... .......... .......... .......... 33.2M
+ 13550K .......... .......... .......... .......... .......... 34.7M
+ 13600K .......... .......... .......... .......... .......... 38.4M
+ 13650K .......... .......... .......... .......... .......... 1.05M
+ 13700K .......... .......... .......... .......... .......... 17.0M
+ 13750K .......... .......... .......... .......... .......... 25.2M
+ 13800K .......... .......... .......... .......... .......... 35.2M
+ 13850K .......... .......... .......... .......... .......... 34.4M
+ 13900K .......... .......... .......... .......... .......... 32.5M
+ 13950K .......... .......... .......... .......... .......... 37.1M
+ 14000K .......... .......... .......... .......... .......... 36.9M
+ 14050K .......... .......... .......... .......... .......... 26.1M
+ 14100K .......... .......... .......... .......... .......... 34.0M
+ 14150K .......... .......... .......... .......... .......... 37.3M
+ 14200K .......... .......... .......... .......... .......... 35.7M
+ 14250K .......... .......... .......... .......... .......... 18.2M
+ 14300K .......... .......... .......... .......... .......... 15.7M
+ 14350K .......... .......... .......... .......... .......... 29.2M
+ 14400K .......... .......... .......... .......... .......... 35.6M
+ 14450K .......... .......... .......... .......... .......... 28.8M
+ 14500K .......... .......... .......... .......... .......... 38.0M
+ 14550K .......... .......... .......... .......... .......... 37.0M
+ 14600K .......... .......... .......... .......... .......... 34.8M
+ 14650K .......... .......... .......... .......... .......... 32.9M
+ 14700K .......... .......... .......... .......... .......... 36.7M
+ 14750K .......... .......... .......... .......... .......... 35.4M
+ 14800K .......... .......... .......... .......... .......... 33.4M
+ 14850K .......... .......... .......... .......... .......... 19.9M
+ 14900K .......... .......... .......... .......... .......... 30.1M
+ 14950K .......... .......... .......... .......... .......... 32.9M
+ 15000K .......... .......... .......... .......... .......... 35.3M
+ 15050K .......... .......... .......... .......... .......... 24.6M
+ 15100K .......... .......... .......... .......... .......... 34.8M
+ 15150K .......... .......... .......... .......... .......... 37.7M
+ 15200K .......... .......... .......... .......... .......... 32.0M
+ 15250K .......... .......... .......... .......... .......... 30.7M
+ 15300K .......... .......... .......... .......... .......... 32.2M
+ 15350K .......... .......... .......... .......... .......... 8.09M
+ 15400K .......... .......... .......... .......... ..........  184K
+ 15450K .......... .......... .......... .......... .......... 16.5M
+ 15500K .......... .......... .......... .......... .......... 36.1M
+ 15550K .......... .......... .......... .......... .......... 37.9M
+ 15600K .......... .......... .......... .......... .......... 34.3M
+ 15650K .......... .......... .......... .......... .......... 37.3M
+ 15700K .......... .......... .......... .......... .......... 37.3M
+ 15750K .......... .......... .......... .......... .......... 36.8M
+ 15800K .......... .......... .......... .......... .......... 26.1M
+ 15850K .......... .......... .......... .......... .......... 36.8M
+ 15900K .......... .......... .......... .......... .......... 37.0M
+ 15950K .......... .......... .......... .......... .......... 34.4M
+ 16000K .......... .......... .......... .......... .......... 24.7M
+ 16050K .......... .......... .......... .......... .......... 16.5M
+ 16100K .......... .......... .......... .......... .......... 20.4M
+ 16150K .......... .......... .......... .......... .......... 29.3M
+ 16200K .......... .......... .......... .......... .......... 35.3M
+ 16250K .......... .......... .......... .......... .......... 38.1M
+ 16300K .......... .......... .......... .......... .......... 36.9M
+ 16350K .......... .......... .......... .......... .......... 35.1M
+ 16400K .......... .......... .......... .......... .......... 32.3M
+ 16450K .......... .......... .......... .......... .......... 38.0M
+ 16500K .......... .......... .......... .......... .......... 35.2M
+ 16550K .......... .......... .......... .......... .......... 24.8M
+ 16600K .......... .......... .......... .......... .......... 22.1M
+ 16650K .......... .......... .......... .......... .......... 20.4M
+ 16700K .......... .......... .......... .......... .......... 19.8M
+ 16750K .......... .......... .......... .......... .......... 12.5M
+ 16800K .......... .......... .......... .......... .......... 10.7M
+ 16850K .......... .......... .......... .......... .......... 11.2M
+ 16900K .......... .......... .......... .......... .......... 12.3M
+ 16950K .......... .......... .......... .......... .......... 11.3M
+ 17000K .......... .......... .......... .......... .......... 11.0M
+ 17050K .......... .......... .......... .......... .......... 12.0M
+ 17100K .......... .......... .......... .......... .......... 14.9M
+ 17150K .......... .......... .......... .......... .......... 15.4M
+ 17200K .......... .......... .......... .......... .......... 15.0M
+ 17250K .......... .......... .......... .......... .......... 14.8M
+ 17300K .......... .......... .......... .......... .......... 11.9M
+ 17350K .......... .......... .......... .......... .......... 14.8M
+ 17400K .......... .......... .......... .......... .......... 15.7M
+ 17450K .......... .......... .......... .......... .......... 14.6M
+ 17500K .......... .......... .......... .......... .......... 12.4M
+ 17550K .......... .......... .......... .......... .......... 14.7M
+ 17600K .......... .......... .......... .......... .......... 16.3M
+ 17650K .......... .......... .......... .......... .......... 17.3M
+ 17700K .......... .......... .......... .......... .......... 16.9M
+ 17750K .......... .......... .......... .......... .          16.8M=1.8s
+
+2022-10-22 15:44:21 (9.74 MB/s) - ‘master.zip’ saved [18218780]
+
+Archive:  master.zip
+d3be42a72ca6eabff54a4f3be50c16613f69f1b6
+   creating: freepdk-45nm-master/
+  inflating: freepdk-45nm-master/README.md  
+  inflating: freepdk-45nm-master/adk.tcl  
+   creating: freepdk-45nm-master/alib/
+   creating: freepdk-45nm-master/alib/alib-52/
+ extracting: freepdk-45nm-master/alib/alib-52/stdcells.db.alib  
+  inflating: freepdk-45nm-master/calibre-drc-block.rule  
+  inflating: freepdk-45nm-master/calibre-lvs.rule  
+  inflating: freepdk-45nm-master/calibre.layerprops  
+  inflating: freepdk-45nm-master/display.drf  
+  inflating: freepdk-45nm-master/klayout.lyp  
+  inflating: freepdk-45nm-master/rtk-stream-out.map  
+  inflating: freepdk-45nm-master/rtk-tech.info  
+  inflating: freepdk-45nm-master/rtk-tech.lef  
+  inflating: freepdk-45nm-master/rtk-tech.par  
+  inflating: freepdk-45nm-master/rtk-tech.tf  
+  inflating: freepdk-45nm-master/rtk-typical.captable  
+  inflating: freepdk-45nm-master/stdcells-bc.lib  
+  inflating: freepdk-45nm-master/stdcells-databook.pdf  
+  inflating: freepdk-45nm-master/stdcells-lpe.spi  
+  inflating: freepdk-45nm-master/stdcells-wc.lib  
+  inflating: freepdk-45nm-master/stdcells.cdl  
+  inflating: freepdk-45nm-master/stdcells.db  
+  inflating: freepdk-45nm-master/stdcells.gds  
+  inflating: freepdk-45nm-master/stdcells.lef  
+  inflating: freepdk-45nm-master/stdcells.lib  
+   creating: freepdk-45nm-master/stdcells.mwlib/
+ extracting: freepdk-45nm-master/stdcells.mwlib/.lock  
+   creating: freepdk-45nm-master/stdcells.mwlib/CEL/
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND2_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND3_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND3_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND3_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND4_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND4_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AND4_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/ANTENNA_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI211_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI211_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI211_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI21_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI21_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI21_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI221_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI221_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI221_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI222_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI222_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI222_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI22_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI22_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/AOI22_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/BUF_X16:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/BUF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/BUF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/BUF_X32:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/BUF_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/BUF_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKBUF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKBUF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKBUF_X3:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKGATETST_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKGATETST_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKGATETST_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKGATETST_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKGATE_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKGATE_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKGATE_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/CLKGATE_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DFFRS_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DFFRS_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DFFR_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DFFR_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DFFS_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DFFS_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DFF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DFF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DLH_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DLH_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DLL_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/DLL_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/FA_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/FILLCELL_X16:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/FILLCELL_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/FILLCELL_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/FILLCELL_X32:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/FILLCELL_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/FILLCELL_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/HA_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/INV_X16:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/INV_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/INV_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/INV_X32:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/INV_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/INV_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/LOGIC0_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/LOGIC1_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/MUX2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/MUX2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND2_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND3_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND3_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND3_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND4_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND4_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NAND4_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR2_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR3_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR3_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR3_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR4_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR4_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/NOR4_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI211_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI211_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI211_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI21_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI21_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI21_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI221_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI221_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI221_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI222_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI222_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI222_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI22_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI22_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI22_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OAI33_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR2_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR3_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR3_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR3_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR4_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR4_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/OR4_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/SDFFRS_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/SDFFRS_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/SDFFR_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/SDFFR_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/SDFFS_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/SDFFS_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/SDFF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/SDFF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/TBUF_X16:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/TBUF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/TBUF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/TBUF_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/TBUF_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/TINV_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/TLAT_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/XNOR2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/XNOR2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/XOR2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/XOR2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/CEL/unitTile:1  
+   creating: freepdk-45nm-master/stdcells.mwlib/FRAM/
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND2_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND3_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND3_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND3_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND4_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND4_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AND4_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/ANTENNA_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI211_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI211_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI211_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI21_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI21_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI21_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI221_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI221_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI221_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI222_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI222_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI222_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI22_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI22_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/AOI22_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/BUF_X16:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/BUF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/BUF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/BUF_X32:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/BUF_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/BUF_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKBUF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKBUF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKBUF_X3:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKGATETST_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKGATETST_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKGATETST_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKGATETST_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKGATE_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKGATE_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKGATE_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/CLKGATE_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DFFRS_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DFFRS_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DFFR_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DFFR_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DFFS_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DFFS_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DFF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DFF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DLH_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DLH_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DLL_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/DLL_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/FA_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/FILLCELL_X16:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/FILLCELL_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/FILLCELL_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/FILLCELL_X32:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/FILLCELL_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/FILLCELL_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/HA_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/INV_X16:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/INV_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/INV_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/INV_X32:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/INV_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/INV_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/LOGIC0_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/LOGIC1_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/MUX2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/MUX2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND2_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND3_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND3_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND3_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND4_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND4_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NAND4_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR2_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR3_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR3_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR3_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR4_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR4_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/NOR4_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI211_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI211_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI211_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI21_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI21_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI21_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI221_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI221_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI221_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI222_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI222_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI222_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI22_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI22_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI22_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OAI33_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR2_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR3_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR3_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR3_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR4_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR4_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/OR4_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/SDFFRS_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/SDFFRS_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/SDFFR_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/SDFFR_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/SDFFS_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/SDFFS_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/SDFF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/SDFF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/TBUF_X16:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/TBUF_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/TBUF_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/TBUF_X4:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/TBUF_X8:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/TINV_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/TLAT_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/XNOR2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/XNOR2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/XOR2_X1:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/FRAM/XOR2_X2:1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/lib  
+ extracting: freepdk-45nm-master/stdcells.mwlib/lib_1  
+  inflating: freepdk-45nm-master/stdcells.mwlib/lib_2  
+ extracting: freepdk-45nm-master/stdcells.mwlib/lib_3  
+  inflating: freepdk-45nm-master/stdcells.mwlib/lib_5  
+  inflating: freepdk-45nm-master/stdcells.mwlib/lib_6  
+  inflating: freepdk-45nm-master/stdcells.mwlib/lib_7  
+  inflating: freepdk-45nm-master/stdcells.mwlib/lib_8  
+  inflating: freepdk-45nm-master/stdcells.mwlib/lib_bck  
+  inflating: freepdk-45nm-master/stdcells.v  

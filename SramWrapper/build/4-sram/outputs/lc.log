@@ -1,0 +1,70 @@
+
+                             Library Compiler (TM)
+                                 DesignWare (R)
+
+               Version M-2017.06-SP3 for linux64 - Oct 12, 2017 
+
+                    Copyright (c) 1988 - 2017 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Initializing...
+read_lib ./sram_TT_1p0V_25C.lib
+Reading '/home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/4-sram/outputs/sram_TT_1p0V_25C.lib' ...
+Warning: Line 1, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
+	No default can be applied to this attribute. (LBDB-366)
+Technology library 'sram_TT_1p0V_25C_lib' read successfully
+1
+write_lib sram_TT_1p0V_25C_lib -format db -output ./sram_TT_1p0V_25C.db
+Wrote the 'sram_TT_1p0V_25C_lib' library to '/home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/4-sram/outputs/./sram_TT_1p0V_25C.db' successfully
+1
+remove_lib sram_TT_1p0V_25C
+Warning: The 'sram_TT_1p0V_25C' library has not been read in yet. (UIL-3)
+1
+read_lib ./sram_SS_1p0V_25C.lib
+Reading '/home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/4-sram/outputs/sram_SS_1p0V_25C.lib' ...
+Warning: Line 1, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
+	No default can be applied to this attribute. (LBDB-366)
+Technology library 'sram_SS_1p0V_25C_lib' read successfully
+1
+write_lib sram_SS_1p0V_25C_lib -format db -output ./sram_SS_1p0V_25C.db
+Wrote the 'sram_SS_1p0V_25C_lib' library to '/home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/4-sram/outputs/./sram_SS_1p0V_25C.db' successfully
+1
+remove_lib sram_SS_1p0V_25C
+Warning: The 'sram_SS_1p0V_25C' library has not been read in yet. (UIL-3)
+1
+read_lib ./sram_FF_1p0V_25C.lib
+Reading '/home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/4-sram/outputs/sram_FF_1p0V_25C.lib' ...
+Warning: Line 1, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
+	No default can be applied to this attribute. (LBDB-366)
+Technology library 'sram_FF_1p0V_25C_lib' read successfully
+1
+write_lib sram_FF_1p0V_25C_lib -format db -output ./sram_FF_1p0V_25C.db
+Wrote the 'sram_FF_1p0V_25C_lib' library to '/home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/4-sram/outputs/./sram_FF_1p0V_25C.db' successfully
+1
+remove_lib sram_FF_1p0V_25C
+Warning: The 'sram_FF_1p0V_25C' library has not been read in yet. (UIL-3)
+1
+read_lib ./sram_TT_3p3V_25C.lib
+Reading '/home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/4-sram/outputs/sram_TT_3p3V_25C.lib' ...
+Warning: Line 25, The value 1.000000 of 'nom_voltage' is not the same as the value
+	3.300000 of 'voltage' of the default operating_conditions 'OC'. (LBDB-721)
+Warning: Line 1, Overwrite 'nom_voltage' by default 'voltage' value 3.300000 defined
+	in 'operating_conditions'.  (LBDB-750)
+Warning: Line 1, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
+	No default can be applied to this attribute. (LBDB-366)
+Technology library 'sram_TT_3p3V_25C_lib' read successfully
+1
+write_lib sram_TT_3p3V_25C_lib -format db -output ./sram_TT_3p3V_25C.db
+Wrote the 'sram_TT_3p3V_25C_lib' library to '/home/users/ctorng/work/cc/ee272-hw5/SramWrapper/build/4-sram/outputs/./sram_TT_3p3V_25C.db' successfully
+1
+remove_lib sram_TT_3p3V_25C
+Warning: The 'sram_TT_3p3V_25C' library has not been read in yet. (UIL-3)
+1
+exit
+Memory usage for this session 27 Mbytes.
+CPU usage for this session 0 seconds ( 0.00 hours ).
+
+Thank you...

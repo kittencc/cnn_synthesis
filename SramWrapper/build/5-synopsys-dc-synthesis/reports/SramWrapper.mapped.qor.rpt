@@ -1,0 +1,99 @@
+ 
+****************************************
+Report : qor
+Design : SramWrapper
+Version: L-2016.03-SP5-5
+Date   : Sat Oct 22 15:45:24 2022
+****************************************
+
+
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:              20.00
+  Critical Path Length:          0.70
+  Critical Path Slack:           0.29
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:              30.00
+  Critical Path Length:          1.00
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          2
+  Hierarchical Port Count:        128
+  Leaf Cell Count:                180
+  Buf/Inv Cell Count:              61
+  Buf Cell Count:                  18
+  Inv Cell Count:                  43
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       179
+  Sequential Cell Count:            1
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      212.799999
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:             37.240000
+  Total Buffer Area:            14.36
+  Total Inverter Area:          22.88
+  Macro/Black Box Area:  14848.070312
+  Net Area:                  0.000000
+  Net XLength        :         860.44
+  Net YLength        :         750.16
+  -----------------------------------
+  Cell Area:             15060.870312
+  Design Area:           15060.870312
+  Net Length        :         1610.60
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           268
+  Nets With Violations:            14
+  Max Trans Violations:             0
+  Max Cap Violations:              14
+  -----------------------------------
+
+
+  Hostname: caddy01
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.11
+  Logic Optimization:                  3.00
+  Mapping Optimization:              304.37
+  -----------------------------------------
+  Overall Compile Time:              354.61
+  Overall Compile Wall Clock Time:    34.14
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

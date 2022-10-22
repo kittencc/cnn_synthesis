@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : reference
+Design : SramWrapper
+Version: L-2016.03-SP5-5
+Date   : Sat Oct 22 15:45:25 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X1             NangateOpenCellLibrary     0.532000       7     3.724000
+SramWrapper_SramWrapper_DW01_dec_J1_0_0   111.187999       1   111.187999 h
+SramWrapper_SramWrapper_DW01_inc_0_0    97.888000       1    97.888000 h
+sram               sram_TT_3p3V_25C_lib 14848.070312       1 14848.070312 b, d
+-----------------------------------------------------------------------------
+Total 4 references                                  15060.870312
+
+****************************************
+Design: SramWrapper_SramWrapper_DW01_dec_J1_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+BUF_X1             NangateOpenCellLibrary     0.798000       1     0.798000
+CLKBUF_X1          NangateOpenCellLibrary     0.798000      17    13.566000
+INV_X1             NangateOpenCellLibrary     0.532000      14     7.448000
+NAND2_X1           NangateOpenCellLibrary     0.798000       6     4.788000
+NAND2_X2           NangateOpenCellLibrary     1.330000       7     9.310000
+NOR2_X1            NangateOpenCellLibrary     0.798000       1     0.798000
+NOR2_X2            NangateOpenCellLibrary     1.330000      13    17.290001
+NOR2_X4            NangateOpenCellLibrary     2.394000       1     2.394000
+NOR3_X1            NangateOpenCellLibrary     1.064000       1     1.064000
+OR4_X4             NangateOpenCellLibrary     3.458000       1     3.458000
+XNOR2_X1           NangateOpenCellLibrary     1.596000      28    44.687999
+XOR2_X1            NangateOpenCellLibrary     1.596000       2     3.192000
+XOR2_X2            NangateOpenCellLibrary     2.394000       1     2.394000
+-----------------------------------------------------------------------------
+Total 13 references                                   111.187999
+
+****************************************
+Design: SramWrapper_SramWrapper_DW01_inc_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary     2.660000      15    39.900001 r
+INV_X1             NangateOpenCellLibrary     0.532000      22    11.704000
+NAND2_X1           NangateOpenCellLibrary     0.798000      16    12.768000
+NOR2_X1            NangateOpenCellLibrary     0.798000      10     7.980000
+XNOR2_X1           NangateOpenCellLibrary     1.596000       9    14.364000
+XOR2_X1            NangateOpenCellLibrary     1.596000       7    11.172000
+-----------------------------------------------------------------------------
+Total 6 references                                     97.888000
+1

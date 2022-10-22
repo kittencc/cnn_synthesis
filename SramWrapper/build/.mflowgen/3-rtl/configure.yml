@@ -1,0 +1,13 @@
+build_dir: 3-rtl
+build_id: '3'
+commands:
+- 'true'
+edges_i: {}
+edges_o:
+  design.v:
+  - f: design.v
+    step: 5-synopsys-dc-synthesis
+name: rtl
+outputs:
+- design.v
+source: /home/users/ctorng/work/cc/ee272-hw5/SramWrapper/design/rtl
