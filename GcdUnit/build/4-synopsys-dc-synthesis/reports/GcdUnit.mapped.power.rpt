@@ -1,0 +1,49 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : GcdUnit
+Version: L-2016.03-SP5-5
+Date   : Fri Oct 21 23:07:09 2022
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/users/ctorng/work/cc/ee272-hw5/GcdUnit/build/4-synopsys-dc-synthesis/inputs/adk/stdcells.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+GcdUnit                                  71.997  141.502 7.41e+03  220.907 100.0
+  dpath (GcdUnit_GcdUnitDpathRTL_0x29124399ca008c5e_0)   70.783  135.064 6.88e+03  212.723  96.3
+    b_reg (GcdUnit_RegEn_0x68db79c4ec1d6e5b_1)   11.865   37.415 1.33e+03   50.605  22.9
+    sub (GcdUnit_Subtractor_0x422b1f52edd46a85_0)   22.882   20.040 1.41e+03   44.336  20.1
+      sub_x_1 (GcdUnit_Subtractor_0x422b1f52edd46a85_DW01_sub_J1_0_0)   22.882   20.040 1.41e+03   44.336  20.1
+    b_mux (GcdUnit_Mux_0xdd6473406d1a99a_0)    1.720    5.945  581.573    8.246   3.7
+    a_mux (GcdUnit_Mux_0x683fa1a418b072c9_0)    5.921    9.077  966.622   15.965   7.2
+    b_zero (GcdUnit_ZeroComparator_0x422b1f52edd46a85_0) 6.72e-02    0.226  144.934    0.438   0.2
+    a_lt_b (GcdUnit_LtComparator_0x422b1f52edd46a85_0)    7.084    9.115 1.10e+03   17.297   7.8
+    a_reg (GcdUnit_RegEn_0x68db79c4ec1d6e5b_0)   18.831   53.004 1.32e+03   73.157  33.1
+  ctrl (GcdUnit_GcdUnitCtrlRTL_0x29124399ca008c5e_0)    1.214    6.439  530.995    8.184   3.7
+    state (GcdUnit_RegRst_0x9f365fdf6c8998a_0)    0.221    5.431  234.463    5.886   2.7
+1

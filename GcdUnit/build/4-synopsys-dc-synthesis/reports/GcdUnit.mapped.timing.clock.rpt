@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : clock timing
+        -type summary
+Design : GcdUnit
+Version: L-2016.03-SP5-5
+Date   : Fri Oct 21 23:07:08 2022
+****************************************
+
+  Clock: ideal_clock
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ctrl/state/out_reg_0_/CK                               0.00      wr-+
+
+  Minimum setup capture latency:
+      ctrl/state/out_reg_0_/CK                               0.00      wr-+
+
+  Minimum hold launch latency:
+      ctrl/state/out_reg_0_/CK                               0.00      br-+
+
+  Maximum hold capture latency:
+      ctrl/state/out_reg_0_/CK                               0.00      br-+
+
+  Maximum active transition:
+      ctrl/state/out_reg_0_/CK                               0.00      wr-+
+
+  Minimum active transition:
+      ctrl/state/out_reg_0_/CK                               0.00      wr-+
+
+  Maximum setup skew:
+      ctrl/state/out_reg_0_/CK                                         wr-+
+      ctrl/state/out_reg_0_/CK                               0.00      wr-+
+
+  Maximum hold skew:
+      ctrl/state/out_reg_0_/CK                                         br-+
+      ctrl/state/out_reg_0_/CK                               0.00      br-+
+----------------------------------------------------------------------------
+
+1

@@ -1,7 +1,7 @@
 #=========================================================================
 # Makefile
 #=========================================================================
-# Generator : /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/backends/make_backend.py
+# Generator : /home/users/ctorng/work/cc/mflowgen/mflowgen/backends/make_backend.py
 
 SHELL=/usr/bin/env bash -euo pipefail
 
@@ -78,7 +78,7 @@ endif
 ifeq ("$(wildcard 0-constraints/.prebuilt)","")
 
 define 0_constraints_commands_rule
-	mkdir -p 0-constraints/outputs && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t constraints && chmod +x .mflowgen/0-constraints/mflowgen-run && cp -f .mflowgen/0-constraints/mflowgen-run 0-constraints && if [[ -e .mflowgen/0-constraints/mflowgen-debug ]]; then chmod +x .mflowgen/0-constraints/mflowgen-debug && cp -f .mflowgen/0-constraints/mflowgen-debug 0-constraints; fi && if [[ -e .mflowgen/0-constraints/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/0-constraints/mflowgen-check-preconditions.py && cp -f .mflowgen/0-constraints/mflowgen-check-preconditions.py 0-constraints; fi && if [[ -e .mflowgen/0-constraints/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/0-constraints/mflowgen-check-postconditions.py && cp -f .mflowgen/0-constraints/mflowgen-check-postconditions.py 0-constraints; fi && cd 0-constraints && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 0-constraints/outputs/*
+	mkdir -p 0-constraints/outputs && set -o pipefail && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t constraints && chmod +x .mflowgen/0-constraints/mflowgen-run && cp -f .mflowgen/0-constraints/mflowgen-run 0-constraints && if [[ -e .mflowgen/0-constraints/mflowgen-debug ]]; then chmod +x .mflowgen/0-constraints/mflowgen-debug && cp -f .mflowgen/0-constraints/mflowgen-debug 0-constraints; fi && if [[ -e .mflowgen/0-constraints/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/0-constraints/mflowgen-check-preconditions.py && cp -f .mflowgen/0-constraints/mflowgen-check-preconditions.py 0-constraints; fi && if [[ -e .mflowgen/0-constraints/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/0-constraints/mflowgen-check-postconditions.py && cp -f .mflowgen/0-constraints/mflowgen-check-postconditions.py 0-constraints; fi && cd 0-constraints && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 0-constraints/outputs/*
 endef
 
 0-constraints/.execstamp: 0-constraints/.stamp
@@ -101,7 +101,7 @@ define 0_constraints_post_conditions_commands_rule
 	cd 0-constraints && if [[ -e mflowgen-check-postconditions.py ]]; then ./mflowgen-check-postconditions.py || exit 1; fi && cd ..
 endef
 
-0-constraints/.postconditions.stamp: 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/outputs/.stamp.constraints.tcl 0-constraints/.execstamp
+0-constraints/.postconditions.stamp: 0-constraints/.execstamp 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/outputs/.stamp.constraints.tcl
 	$(call 0_constraints_post_conditions_commands_rule)
 	touch $@
 
@@ -109,11 +109,11 @@ endef
 
 .PHONY: constraints
 
-constraints: 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/.postconditions.stamp 0-constraints/outputs/.stamp.constraints.tcl 0-constraints/.execstamp
+constraints: 0-constraints/.execstamp 0-constraints/.postconditions.stamp 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/outputs/.stamp.constraints.tcl
 
 .PHONY: 0
 
-0: 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/.postconditions.stamp 0-constraints/outputs/.stamp.constraints.tcl 0-constraints/.execstamp
+0: 0-constraints/.execstamp 0-constraints/.postconditions.stamp 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/outputs/.stamp.constraints.tcl
 
 # debug
 
@@ -125,7 +125,7 @@ constraints: 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/.pos
 
 ifeq ("$(wildcard 1-freepdk-45nm/.prebuilt)","")
 1-freepdk-45nm/.stamp:
-	$(call cpdir-and-parameterize,1-freepdk-45nm,../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/adks/freepdk-45nm,1-freepdk-45nm/.stamp)
+	$(call mkdir-and-symlink,1-freepdk-45nm,../../../mflowgen/adks/freepdk-45nm,1-freepdk-45nm/.stamp)
 endif
 
 # collect inputs
@@ -135,7 +135,7 @@ endif
 ifeq ("$(wildcard 1-freepdk-45nm/.prebuilt)","")
 
 define 1_freepdk_45nm_commands_rule
-	mkdir -p 1-freepdk-45nm/outputs && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t freepdk-45nm && chmod +x .mflowgen/1-freepdk-45nm/mflowgen-run && cp -f .mflowgen/1-freepdk-45nm/mflowgen-run 1-freepdk-45nm && if [[ -e .mflowgen/1-freepdk-45nm/mflowgen-debug ]]; then chmod +x .mflowgen/1-freepdk-45nm/mflowgen-debug && cp -f .mflowgen/1-freepdk-45nm/mflowgen-debug 1-freepdk-45nm; fi && if [[ -e .mflowgen/1-freepdk-45nm/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/1-freepdk-45nm/mflowgen-check-preconditions.py && cp -f .mflowgen/1-freepdk-45nm/mflowgen-check-preconditions.py 1-freepdk-45nm; fi && if [[ -e .mflowgen/1-freepdk-45nm/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/1-freepdk-45nm/mflowgen-check-postconditions.py && cp -f .mflowgen/1-freepdk-45nm/mflowgen-check-postconditions.py 1-freepdk-45nm; fi && cd 1-freepdk-45nm && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 1-freepdk-45nm/outputs/*
+	mkdir -p 1-freepdk-45nm/outputs && set -o pipefail && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t freepdk-45nm && chmod +x .mflowgen/1-freepdk-45nm/mflowgen-run && cp -f .mflowgen/1-freepdk-45nm/mflowgen-run 1-freepdk-45nm && if [[ -e .mflowgen/1-freepdk-45nm/mflowgen-debug ]]; then chmod +x .mflowgen/1-freepdk-45nm/mflowgen-debug && cp -f .mflowgen/1-freepdk-45nm/mflowgen-debug 1-freepdk-45nm; fi && if [[ -e .mflowgen/1-freepdk-45nm/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/1-freepdk-45nm/mflowgen-check-preconditions.py && cp -f .mflowgen/1-freepdk-45nm/mflowgen-check-preconditions.py 1-freepdk-45nm; fi && if [[ -e .mflowgen/1-freepdk-45nm/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/1-freepdk-45nm/mflowgen-check-postconditions.py && cp -f .mflowgen/1-freepdk-45nm/mflowgen-check-postconditions.py 1-freepdk-45nm; fi && cd 1-freepdk-45nm && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 1-freepdk-45nm/outputs/*
 endef
 
 1-freepdk-45nm/.execstamp: 1-freepdk-45nm/.stamp
@@ -158,7 +158,7 @@ define 1_freepdk_45nm_post_conditions_commands_rule
 	cd 1-freepdk-45nm && if [[ -e mflowgen-check-postconditions.py ]]; then ./mflowgen-check-postconditions.py || exit 1; fi && cd ..
 endef
 
-1-freepdk-45nm/.postconditions.stamp: 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/outputs/.stamp.adk 1-freepdk-45nm/.execstamp
+1-freepdk-45nm/.postconditions.stamp: 1-freepdk-45nm/.execstamp 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/outputs/.stamp.adk
 	$(call 1_freepdk_45nm_post_conditions_commands_rule)
 	touch $@
 
@@ -166,11 +166,11 @@ endef
 
 .PHONY: freepdk-45nm
 
-freepdk-45nm: 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/.postconditions.stamp 1-freepdk-45nm/outputs/.stamp.adk 1-freepdk-45nm/.execstamp
+freepdk-45nm: 1-freepdk-45nm/.execstamp 1-freepdk-45nm/.postconditions.stamp 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/outputs/.stamp.adk
 
 .PHONY: 1
 
-1: 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/.postconditions.stamp 1-freepdk-45nm/outputs/.stamp.adk 1-freepdk-45nm/.execstamp
+1: 1-freepdk-45nm/.execstamp 1-freepdk-45nm/.postconditions.stamp 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/outputs/.stamp.adk
 
 # debug
 
@@ -182,7 +182,7 @@ freepdk-45nm: 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/.postconditio
 
 ifeq ("$(wildcard 2-info/.prebuilt)","")
 2-info/.stamp:
-	$(call cpdir-and-parameterize,2-info,../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/steps/info,2-info/.stamp)
+	$(call cpdir-and-parameterize,2-info,../../../mflowgen/steps/info,2-info/.stamp)
 endif
 
 # collect inputs
@@ -192,7 +192,7 @@ endif
 ifeq ("$(wildcard 2-info/.prebuilt)","")
 
 define 2_info_commands_rule
-	mkdir -p 2-info/outputs && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t info && chmod +x .mflowgen/2-info/mflowgen-run && cp -f .mflowgen/2-info/mflowgen-run 2-info && if [[ -e .mflowgen/2-info/mflowgen-debug ]]; then chmod +x .mflowgen/2-info/mflowgen-debug && cp -f .mflowgen/2-info/mflowgen-debug 2-info; fi && if [[ -e .mflowgen/2-info/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/2-info/mflowgen-check-preconditions.py && cp -f .mflowgen/2-info/mflowgen-check-preconditions.py 2-info; fi && if [[ -e .mflowgen/2-info/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/2-info/mflowgen-check-postconditions.py && cp -f .mflowgen/2-info/mflowgen-check-postconditions.py 2-info; fi && cd 2-info && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 2-info/outputs/*
+	mkdir -p 2-info/outputs && set -o pipefail && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t info && chmod +x .mflowgen/2-info/mflowgen-run && cp -f .mflowgen/2-info/mflowgen-run 2-info && if [[ -e .mflowgen/2-info/mflowgen-debug ]]; then chmod +x .mflowgen/2-info/mflowgen-debug && cp -f .mflowgen/2-info/mflowgen-debug 2-info; fi && if [[ -e .mflowgen/2-info/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/2-info/mflowgen-check-preconditions.py && cp -f .mflowgen/2-info/mflowgen-check-preconditions.py 2-info; fi && if [[ -e .mflowgen/2-info/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/2-info/mflowgen-check-postconditions.py && cp -f .mflowgen/2-info/mflowgen-check-postconditions.py 2-info; fi && cd 2-info && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 2-info/outputs/*
 endef
 
 2-info/.execstamp: 2-info/.stamp
@@ -211,7 +211,7 @@ define 2_info_post_conditions_commands_rule
 	cd 2-info && if [[ -e mflowgen-check-postconditions.py ]]; then ./mflowgen-check-postconditions.py || exit 1; fi && cd ..
 endef
 
-2-info/.postconditions.stamp: 2-info/.execstamp.execute-phony 2-info/.execstamp
+2-info/.postconditions.stamp: 2-info/.execstamp 2-info/.execstamp.execute-phony
 	$(call 2_info_post_conditions_commands_rule)
 	touch $@
 
@@ -219,11 +219,11 @@ endef
 
 .PHONY: info
 
-info: 2-info/.execstamp.execute-phony 2-info/.postconditions.stamp 2-info/.execstamp
+info: 2-info/.execstamp 2-info/.execstamp.execute-phony 2-info/.postconditions.stamp
 
 .PHONY: 2
 
-2: 2-info/.execstamp.execute-phony 2-info/.postconditions.stamp 2-info/.execstamp
+2: 2-info/.execstamp 2-info/.execstamp.execute-phony 2-info/.postconditions.stamp
 
 # debug
 
@@ -245,7 +245,7 @@ endif
 ifeq ("$(wildcard 3-rtl/.prebuilt)","")
 
 define 3_rtl_commands_rule
-	mkdir -p 3-rtl/outputs && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t rtl && chmod +x .mflowgen/3-rtl/mflowgen-run && cp -f .mflowgen/3-rtl/mflowgen-run 3-rtl && if [[ -e .mflowgen/3-rtl/mflowgen-debug ]]; then chmod +x .mflowgen/3-rtl/mflowgen-debug && cp -f .mflowgen/3-rtl/mflowgen-debug 3-rtl; fi && if [[ -e .mflowgen/3-rtl/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/3-rtl/mflowgen-check-preconditions.py && cp -f .mflowgen/3-rtl/mflowgen-check-preconditions.py 3-rtl; fi && if [[ -e .mflowgen/3-rtl/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/3-rtl/mflowgen-check-postconditions.py && cp -f .mflowgen/3-rtl/mflowgen-check-postconditions.py 3-rtl; fi && cd 3-rtl && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 3-rtl/outputs/*
+	mkdir -p 3-rtl/outputs && set -o pipefail && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t rtl && chmod +x .mflowgen/3-rtl/mflowgen-run && cp -f .mflowgen/3-rtl/mflowgen-run 3-rtl && if [[ -e .mflowgen/3-rtl/mflowgen-debug ]]; then chmod +x .mflowgen/3-rtl/mflowgen-debug && cp -f .mflowgen/3-rtl/mflowgen-debug 3-rtl; fi && if [[ -e .mflowgen/3-rtl/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/3-rtl/mflowgen-check-preconditions.py && cp -f .mflowgen/3-rtl/mflowgen-check-preconditions.py 3-rtl; fi && if [[ -e .mflowgen/3-rtl/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/3-rtl/mflowgen-check-postconditions.py && cp -f .mflowgen/3-rtl/mflowgen-check-postconditions.py 3-rtl; fi && cd 3-rtl && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 3-rtl/outputs/*
 endef
 
 3-rtl/.execstamp: 3-rtl/.stamp
@@ -291,19 +291,14 @@ rtl: 3-rtl/.execstamp 3-rtl/.postconditions.stamp 3-rtl/outputs/.execstamp.desig
 # build dir
 
 ifeq ("$(wildcard 4-synopsys-dc-synthesis/.prebuilt)","")
-4-synopsys-dc-synthesis/.stamp: 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/.postconditions.stamp 0-constraints/outputs/.stamp.constraints.tcl 0-constraints/.execstamp
+4-synopsys-dc-synthesis/.stamp: 0-constraints/.execstamp 0-constraints/.postconditions.stamp 0-constraints/outputs/.execstamp.constraints.tcl 0-constraints/outputs/.stamp.constraints.tcl
+4-synopsys-dc-synthesis/.stamp: 1-freepdk-45nm/.execstamp 1-freepdk-45nm/.postconditions.stamp 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/outputs/.stamp.adk
 4-synopsys-dc-synthesis/.stamp: 3-rtl/.execstamp 3-rtl/.postconditions.stamp 3-rtl/outputs/.execstamp.design.v 3-rtl/outputs/.stamp.design.v
-4-synopsys-dc-synthesis/.stamp: 1-freepdk-45nm/outputs/.execstamp.adk 1-freepdk-45nm/.postconditions.stamp 1-freepdk-45nm/outputs/.stamp.adk 1-freepdk-45nm/.execstamp
 4-synopsys-dc-synthesis/.stamp:
-	$(call cpdir-and-parameterize,4-synopsys-dc-synthesis,../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/steps/synopsys-dc-synthesis,4-synopsys-dc-synthesis/.stamp)
+	$(call cpdir-and-parameterize,4-synopsys-dc-synthesis,../../../mflowgen/steps/synopsys-dc-synthesis,4-synopsys-dc-synthesis/.stamp)
 endif
 
 # collect inputs
-
-ifeq ("$(wildcard 4-synopsys-dc-synthesis/.prebuilt)","")
-4-synopsys-dc-synthesis/inputs/.stamp.design.v: 4-synopsys-dc-synthesis/.stamp 3-rtl/outputs/.stamp.design.v
-	$(call symlink,4-synopsys-dc-synthesis/inputs,design.v,../../3-rtl/outputs/design.v,.stamp.design.v)
-endif
 
 ifeq ("$(wildcard 4-synopsys-dc-synthesis/.prebuilt)","")
 4-synopsys-dc-synthesis/inputs/.stamp.adk: 4-synopsys-dc-synthesis/.stamp 1-freepdk-45nm/outputs/.stamp.adk
@@ -315,15 +310,20 @@ ifeq ("$(wildcard 4-synopsys-dc-synthesis/.prebuilt)","")
 	$(call symlink,4-synopsys-dc-synthesis/inputs,constraints.tcl,../../0-constraints/outputs/constraints.tcl,.stamp.constraints.tcl)
 endif
 
+ifeq ("$(wildcard 4-synopsys-dc-synthesis/.prebuilt)","")
+4-synopsys-dc-synthesis/inputs/.stamp.design.v: 4-synopsys-dc-synthesis/.stamp 3-rtl/outputs/.stamp.design.v
+	$(call symlink,4-synopsys-dc-synthesis/inputs,design.v,../../3-rtl/outputs/design.v,.stamp.design.v)
+endif
+
 # execute
 
 ifeq ("$(wildcard 4-synopsys-dc-synthesis/.prebuilt)","")
 
 define 4_synopsys_dc_synthesis_commands_rule
-	mkdir -p 4-synopsys-dc-synthesis/outputs && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t synopsys-dc-synthesis && chmod +x .mflowgen/4-synopsys-dc-synthesis/mflowgen-run && cp -f .mflowgen/4-synopsys-dc-synthesis/mflowgen-run 4-synopsys-dc-synthesis && if [[ -e .mflowgen/4-synopsys-dc-synthesis/mflowgen-debug ]]; then chmod +x .mflowgen/4-synopsys-dc-synthesis/mflowgen-debug && cp -f .mflowgen/4-synopsys-dc-synthesis/mflowgen-debug 4-synopsys-dc-synthesis; fi && if [[ -e .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-preconditions.py && cp -f .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-preconditions.py 4-synopsys-dc-synthesis; fi && if [[ -e .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-postconditions.py && cp -f .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-postconditions.py 4-synopsys-dc-synthesis; fi && cd 4-synopsys-dc-synthesis && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 4-synopsys-dc-synthesis/outputs/*
+	mkdir -p 4-synopsys-dc-synthesis/outputs && set -o pipefail && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t synopsys-dc-synthesis && chmod +x .mflowgen/4-synopsys-dc-synthesis/mflowgen-run && cp -f .mflowgen/4-synopsys-dc-synthesis/mflowgen-run 4-synopsys-dc-synthesis && if [[ -e .mflowgen/4-synopsys-dc-synthesis/mflowgen-debug ]]; then chmod +x .mflowgen/4-synopsys-dc-synthesis/mflowgen-debug && cp -f .mflowgen/4-synopsys-dc-synthesis/mflowgen-debug 4-synopsys-dc-synthesis; fi && if [[ -e .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-preconditions.py && cp -f .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-preconditions.py 4-synopsys-dc-synthesis; fi && if [[ -e .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-postconditions.py && cp -f .mflowgen/4-synopsys-dc-synthesis/mflowgen-check-postconditions.py 4-synopsys-dc-synthesis; fi && cd 4-synopsys-dc-synthesis && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 4-synopsys-dc-synthesis/outputs/*
 endef
 
-4-synopsys-dc-synthesis/.execstamp: 4-synopsys-dc-synthesis/.stamp 4-synopsys-dc-synthesis/inputs/.stamp.design.v 4-synopsys-dc-synthesis/inputs/.stamp.adk 4-synopsys-dc-synthesis/inputs/.stamp.constraints.tcl
+4-synopsys-dc-synthesis/.execstamp: 4-synopsys-dc-synthesis/.stamp 4-synopsys-dc-synthesis/inputs/.stamp.adk 4-synopsys-dc-synthesis/inputs/.stamp.constraints.tcl 4-synopsys-dc-synthesis/inputs/.stamp.design.v
 	$(call 4_synopsys_dc_synthesis_commands_rule)
 	touch $@
 
@@ -333,19 +333,29 @@ endef
 	touch $@
 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap: 4-synopsys-dc-synthesis/.execstamp
 	touch $@
+4-synopsys-dc-synthesis/outputs/.execstamp.design.svf: 4-synopsys-dc-synthesis/.execstamp
+	touch $@
+4-synopsys-dc-synthesis/outputs/.execstamp.design.upf: 4-synopsys-dc-synthesis/.execstamp
+	touch $@
 
 endif
 
 # collect outputs
 
-4-synopsys-dc-synthesis/outputs/.stamp.design.v: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap
+4-synopsys-dc-synthesis/outputs/.stamp.design.v: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.svf 4-synopsys-dc-synthesis/outputs/.execstamp.design.upf 4-synopsys-dc-synthesis/outputs/.execstamp.design.v
 	$(call stamp,4-synopsys-dc-synthesis/outputs/.stamp.design.v)
 
-4-synopsys-dc-synthesis/outputs/.stamp.design.sdc: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap
+4-synopsys-dc-synthesis/outputs/.stamp.design.sdc: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.svf 4-synopsys-dc-synthesis/outputs/.execstamp.design.upf 4-synopsys-dc-synthesis/outputs/.execstamp.design.v
 	$(call stamp,4-synopsys-dc-synthesis/outputs/.stamp.design.sdc)
 
-4-synopsys-dc-synthesis/outputs/.stamp.design.namemap: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap
+4-synopsys-dc-synthesis/outputs/.stamp.design.namemap: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.svf 4-synopsys-dc-synthesis/outputs/.execstamp.design.upf 4-synopsys-dc-synthesis/outputs/.execstamp.design.v
 	$(call stamp,4-synopsys-dc-synthesis/outputs/.stamp.design.namemap)
+
+4-synopsys-dc-synthesis/outputs/.stamp.design.svf: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.svf 4-synopsys-dc-synthesis/outputs/.execstamp.design.upf 4-synopsys-dc-synthesis/outputs/.execstamp.design.v
+	$(call stamp,4-synopsys-dc-synthesis/outputs/.stamp.design.svf)
+
+4-synopsys-dc-synthesis/outputs/.stamp.design.upf: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.svf 4-synopsys-dc-synthesis/outputs/.execstamp.design.upf 4-synopsys-dc-synthesis/outputs/.execstamp.design.v
+	$(call stamp,4-synopsys-dc-synthesis/outputs/.stamp.design.upf)
 
 # post-conditions
 
@@ -353,7 +363,7 @@ define 4_synopsys_dc_synthesis_post_conditions_commands_rule
 	cd 4-synopsys-dc-synthesis && if [[ -e mflowgen-check-postconditions.py ]]; then ./mflowgen-check-postconditions.py || exit 1; fi && cd ..
 endef
 
-4-synopsys-dc-synthesis/.postconditions.stamp: 4-synopsys-dc-synthesis/outputs/.stamp.design.sdc 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.stamp.design.v 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.stamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc
+4-synopsys-dc-synthesis/.postconditions.stamp: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.svf 4-synopsys-dc-synthesis/outputs/.execstamp.design.upf 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/outputs/.stamp.design.namemap 4-synopsys-dc-synthesis/outputs/.stamp.design.sdc 4-synopsys-dc-synthesis/outputs/.stamp.design.svf 4-synopsys-dc-synthesis/outputs/.stamp.design.upf 4-synopsys-dc-synthesis/outputs/.stamp.design.v
 	$(call 4_synopsys_dc_synthesis_post_conditions_commands_rule)
 	touch $@
 
@@ -361,11 +371,11 @@ endef
 
 .PHONY: synopsys-dc-synthesis
 
-synopsys-dc-synthesis: 4-synopsys-dc-synthesis/outputs/.stamp.design.sdc 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.stamp.design.v 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.stamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/.postconditions.stamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc
+synopsys-dc-synthesis: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/.postconditions.stamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.svf 4-synopsys-dc-synthesis/outputs/.execstamp.design.upf 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/outputs/.stamp.design.namemap 4-synopsys-dc-synthesis/outputs/.stamp.design.sdc 4-synopsys-dc-synthesis/outputs/.stamp.design.svf 4-synopsys-dc-synthesis/outputs/.stamp.design.upf 4-synopsys-dc-synthesis/outputs/.stamp.design.v
 
 .PHONY: 4
 
-4: 4-synopsys-dc-synthesis/outputs/.stamp.design.sdc 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/outputs/.stamp.design.v 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.stamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/.postconditions.stamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc
+4: 4-synopsys-dc-synthesis/.execstamp 4-synopsys-dc-synthesis/.postconditions.stamp 4-synopsys-dc-synthesis/outputs/.execstamp.design.namemap 4-synopsys-dc-synthesis/outputs/.execstamp.design.sdc 4-synopsys-dc-synthesis/outputs/.execstamp.design.svf 4-synopsys-dc-synthesis/outputs/.execstamp.design.upf 4-synopsys-dc-synthesis/outputs/.execstamp.design.v 4-synopsys-dc-synthesis/outputs/.stamp.design.namemap 4-synopsys-dc-synthesis/outputs/.stamp.design.sdc 4-synopsys-dc-synthesis/outputs/.stamp.design.svf 4-synopsys-dc-synthesis/outputs/.stamp.design.upf 4-synopsys-dc-synthesis/outputs/.stamp.design.v
 
 # debug
 
@@ -389,7 +399,7 @@ debug-4: debug-synopsys-dc-synthesis
 .PHONY: clean-all
 
 clean-all:
-	@find . -maxdepth 1 ! -name Makefile ! -name .mflowgen ! -name .mflowgen.stash.yml ! -name \. ! -name \.\. -exec rm -rf {} +
+	@find . -maxdepth 1 ! -name Makefile ! -name .mflowgen\* ! -name \. ! -name \.\. -exec rm -rf {} +
 
 .PHONY: clean-0
 
@@ -446,12 +456,12 @@ diff-0:
 .PHONY: diff-1
 
 diff-1:
-	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/adks/freepdk-45nm 1-freepdk-45nm | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/adks/freepdk-45nm.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 1-freepdk-45nm.*' && echo || true
+	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../../../mflowgen/adks/freepdk-45nm 1-freepdk-45nm | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../../../mflowgen/adks/freepdk-45nm.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 1-freepdk-45nm.*' && echo || true
 
 .PHONY: diff-2
 
 diff-2:
-	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/steps/info 2-info | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/steps/info.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 2-info.*' && echo || true
+	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../../../mflowgen/steps/info 2-info | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../../../mflowgen/steps/info.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 2-info.*' && echo || true
 
 .PHONY: diff-3
 
@@ -461,41 +471,41 @@ diff-3:
 .PHONY: diff-4
 
 diff-4:
-	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/steps/synopsys-dc-synthesis 4-synopsys-dc-synthesis | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../../../../../../../../afs/ir.stanford.edu/class/ee272/mflowgen/steps/synopsys-dc-synthesis.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 4-synopsys-dc-synthesis.*' && echo || true
+	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../../../mflowgen/steps/synopsys-dc-synthesis 4-synopsys-dc-synthesis | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../../../mflowgen/steps/synopsys-dc-synthesis.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 4-synopsys-dc-synthesis.*' && echo || true
 
 # Info
 
 .PHONY: info-0
 
 info-0:
-	@/afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t constraints && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/0-constraints/configure.yml
+	@/home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t constraints && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/0-constraints/configure.yml
 
 .PHONY: info-1
 
 info-1:
-	@/afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t freepdk-45nm && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/1-freepdk-45nm/configure.yml
+	@/home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t freepdk-45nm && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/1-freepdk-45nm/configure.yml
 
 .PHONY: info-2
 
 info-2:
-	@/afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t info && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/2-info/configure.yml
+	@/home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t info && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/2-info/configure.yml
 
 .PHONY: info-3
 
 info-3:
-	@/afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t rtl && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/3-rtl/configure.yml
+	@/home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t rtl && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/3-rtl/configure.yml
 
 .PHONY: info-4
 
 info-4:
-	@/afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-letters -c -t synopsys-dc-synthesis && /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/4-synopsys-dc-synthesis/configure.yml
+	@/home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-letters -c -t synopsys-dc-synthesis && /home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/4-synopsys-dc-synthesis/configure.yml
 
 # Runtimes
 
 .PHONY: runtimes
 
 runtimes:
-	@/afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-runtimes
+	@/home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-runtimes
 
 # List
 
@@ -516,5 +526,5 @@ graph:
 .PHONY: status
 
 status:
-	@/afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/scripts/mflowgen-status --backend make -s 0-constraints,1-freepdk-45nm,2-info,3-rtl,4-synopsys-dc-synthesis
+	@/home/users/ctorng/work/cc/mflowgen/mflowgen/scripts/mflowgen-status --backend make -s 1-freepdk-45nm,3-rtl,4-synopsys-dc-synthesis,0-constraints,2-info
 

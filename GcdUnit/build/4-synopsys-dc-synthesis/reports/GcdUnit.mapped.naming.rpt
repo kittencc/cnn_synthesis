@@ -1,0 +1,12 @@
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+GcdUnit         net     ctrl$a_mux_sel          ctrl_a_mux_sel
+GcdUnit         net     ctrl$a_mux_sel[1]       ctrl_a_mux_sel[1]
+GcdUnit         net     ctrl$a_mux_sel[0]       ctrl_a_mux_sel[0]
+GcdUnit         net     ctrl$b_mux_sel[0]       ctrl_b_mux_sel_0_
+GcdUnit         net     ctrl$b_reg_en[0]        ctrl_b_reg_en_0_
+GcdUnit         net     ctrl$a_reg_en[0]        ctrl_a_reg_en_0_
+GcdUnit         net     dpath$is_b_zero[0]      dpath_is_b_zero_0_
+GcdUnit         net     dpath$is_a_lt_b[0]      dpath_is_a_lt_b_0_
+1

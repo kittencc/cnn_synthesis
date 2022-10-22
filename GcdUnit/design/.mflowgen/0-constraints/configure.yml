@@ -1,0 +1,16 @@
+build_dir: 0-constraints
+build_id: '0'
+commands:
+- 'true'
+edges_i: {}
+edges_o:
+  constraints.tcl:
+  - f: constraints.tcl
+    step: 4-synopsys-dc-synthesis
+name: constraints
+outputs:
+- constraints.tcl
+parameters:
+  clock_period: 2.0
+  design_name: GcdUnit
+source: /home/users/ctorng/work/cc/ee272-hw5/GcdUnit/design/constraints

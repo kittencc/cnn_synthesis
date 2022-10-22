@@ -1,0 +1,64 @@
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP5-5
+Date:        Fri Oct 21 23:07:08 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     15
+    Unconnected ports (LINT-28)                                    15
+
+Cells                                                              16
+    Connected to power or ground (LINT-32)                         16
+--------------------------------------------------------------------------------
+
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'LtComparator_0x422b1f52edd46a85', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'LtComparator_0x422b1f52edd46a85', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ZeroComparator_0x422b1f52edd46a85', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ZeroComparator_0x422b1f52edd46a85', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Mux_0x683fa1a418b072c9', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Mux_0x683fa1a418b072c9', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Mux_0xdd6473406d1a99a', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Mux_0xdd6473406d1a99a', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Subtractor_0x422b1f52edd46a85', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Subtractor_0x422b1f52edd46a85', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Subtractor_0x422b1f52edd46a85_DW01_sub_J1_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'Subtractor_0x422b1f52edd46a85_DW01_sub_J1_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'RegEn_0x68db79c4ec1d6e5b_1', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'RegEn_0x68db79c4ec1d6e5b_0', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'GcdUnit', a pin on submodule 'dpath' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'a_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'a_lt_b' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'clk[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'a_lt_b' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'b_zero' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'clk[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'b_zero' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'a_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'clk[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'a_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'b_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'clk[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'b_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'sub' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'clk[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'sub' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset[0]' is connected to logic 0. 
+Warning: In design 'GcdUnitDpathRTL_0x29124399ca008c5e', a pin on submodule 'b_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reset[0]' is connected to logic 0. 
+Warning: In design 'Subtractor_0x422b1f52edd46a85', a pin on submodule 'sub_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'RegEn_0x68db79c4ec1d6e5b_1', a pin on submodule 'clk_gate_out_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+Warning: In design 'RegEn_0x68db79c4ec1d6e5b_0', a pin on submodule 'clk_gate_out_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TE' is connected to logic 0. 
+1

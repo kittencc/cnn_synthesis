@@ -6,7 +6,7 @@ commands:
 - echo "ADK              -- freepdk-45nm"
 - echo "ADK view         -- view-standard"
 - echo
-- echo "Constructed from -- ../design/construct.py"
+- echo "Constructed from -- /home/users/ctorng/work/cc/ee272-hw5/GcdUnit/design/construct.py"
 - echo
 edges_i: {}
 edges_o: {}
@@ -15,6 +15,6 @@ parameters:
   adk: freepdk-45nm
   adk_view: view-standard
   clock_period: 2.0
-  construct_path: ../design/construct.py
+  construct_path: /home/users/ctorng/work/cc/ee272-hw5/GcdUnit/design/construct.py
   design_name: GcdUnit
-source: /afs/ir.stanford.edu/class/ee272/mflowgen/steps/info
+source: /home/users/ctorng/work/cc/mflowgen/steps/info

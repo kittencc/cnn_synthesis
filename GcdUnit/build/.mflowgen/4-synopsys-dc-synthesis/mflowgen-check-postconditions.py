@@ -2,7 +2,7 @@
 #-------------------------------------------------------------------------
 # mflowgen-check-postconditions.py
 #-------------------------------------------------------------------------
-# Generated: /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/assertions/assertion_helpers.py
+# Generated: /home/users/ctorng/work/cc/mflowgen/mflowgen/assertions/assertion_helpers.py
 
 import pytest
 import sys

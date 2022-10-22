@@ -3,7 +3,7 @@ set -euo pipefail
 #=========================================================================
 # mflowgen-run
 #=========================================================================
-# Generator : /afs/ir.stanford.edu/class/ee272/mflowgen/mflowgen/core/build_orchestrator.py
+# Generator : /home/users/ctorng/work/cc/mflowgen/mflowgen/core/build_orchestrator.py
 
 # Pre
 

@@ -22,11 +22,14 @@ inputs:
 - design.v
 - constraints.tcl
 - run.saif
+- design.upf
 name: synopsys-dc-synthesis
 outputs:
 - design.v
 - design.sdc
 - design.namemap
+- design.svf
+- design.upf
 parameters:
   clock_period: 2.0
   design_name: GcdUnit
@@ -80,4 +83,4 @@ preconditions:
 - assert File( 'inputs/adk' )
 - assert File( 'inputs/design.v' )
 - assert File( 'inputs/constraints.tcl' )
-source: /afs/ir.stanford.edu/class/ee272/mflowgen/steps/synopsys-dc-synthesis
+source: /home/users/ctorng/work/cc/mflowgen/steps/synopsys-dc-synthesis

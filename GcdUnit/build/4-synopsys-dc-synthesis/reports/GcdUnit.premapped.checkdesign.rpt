@@ -1,0 +1,27 @@
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP5-5
+Date:        Fri Oct 21 23:06:54 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     12
+    Unconnected ports (LINT-28)                                    11
+    Shorted outputs (LINT-31)                                       1
+--------------------------------------------------------------------------------
+
+Warning: In design 'RegEn_0x68db79c4ec1d6e5b', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'LtComparator_0x422b1f52edd46a85', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'LtComparator_0x422b1f52edd46a85', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ZeroComparator_0x422b1f52edd46a85', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ZeroComparator_0x422b1f52edd46a85', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Mux_0x683fa1a418b072c9', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Mux_0x683fa1a418b072c9', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Mux_0xdd6473406d1a99a', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Mux_0xdd6473406d1a99a', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Subtractor_0x422b1f52edd46a85', port 'clk[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Subtractor_0x422b1f52edd46a85', port 'reset[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'GcdUnitCtrlRTL_0x29124399ca008c5e', output port 'b_mux_sel[0]' is connected directly to output port 'req_rdy[0]'. (LINT-31)
+1

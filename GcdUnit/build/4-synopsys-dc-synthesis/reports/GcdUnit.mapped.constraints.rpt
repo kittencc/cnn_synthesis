@@ -1,0 +1,255 @@
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : GcdUnit
+Version: L-2016.03-SP5-5
+Date   : Fri Oct 21 23:07:09 2022
+****************************************
+
+
+  Startpoint: req_val[0] (input port clocked by ideal_clock)
+  Endpoint: ctrl/state/out_reg_0_
+            (rising edge-triggered flip-flop clocked by ideal_clock)
+  Path Group: REGIN
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  req_val[0] (in)                          0.00       1.00 r
+  ctrl/U9/ZN (AOI21_X1)                    0.01 *     1.01 f
+  ctrl/U10/ZN (AOI21_X1)                   0.04 *     1.06 r
+  ctrl/state/U3/ZN (INV_X1)                0.01 *     1.06 f
+  ctrl/state/out_reg_0_/SE (SDFF_X1)       0.00 *     1.06 f
+  data arrival time                                   1.06
+
+  clock ideal_clock (rise edge)            2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  ctrl/state/out_reg_0_/CK (SDFF_X1)       0.00       2.00 r
+  library setup time                      -0.08       1.92
+  data required time                                  1.92
+  -----------------------------------------------------------
+  data required time                                  1.92
+  data arrival time                                  -1.06
+  -----------------------------------------------------------
+  slack (MET)                                         0.85
+
+
+  Startpoint: dpath/b_reg/out_reg_0_
+              (rising edge-triggered flip-flop clocked by ideal_clock)
+  Endpoint: resp_msg[15]
+            (output port clocked by ideal_clock)
+  Path Group: REGOUT
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dpath/b_reg/out_reg_0_/CK (DFF_X1)       0.00       0.00 r
+  dpath/b_reg/out_reg_0_/Q (DFF_X1)        0.10       0.10 r
+  dpath/sub/sub_x_1/U53/ZN (NAND2_X1)      0.02 *     0.12 f
+  dpath/sub/sub_x_1/U57/CO (FA_X1)         0.07 *     0.19 f
+  dpath/sub/sub_x_1/U58/CO (FA_X1)         0.07 *     0.26 f
+  dpath/sub/sub_x_1/U59/CO (FA_X1)         0.07 *     0.33 f
+  dpath/sub/sub_x_1/U60/CO (FA_X1)         0.07 *     0.41 f
+  dpath/sub/sub_x_1/U61/CO (FA_X1)         0.07 *     0.48 f
+  dpath/sub/sub_x_1/U62/CO (FA_X1)         0.07 *     0.55 f
+  dpath/sub/sub_x_1/U63/CO (FA_X1)         0.07 *     0.62 f
+  dpath/sub/sub_x_1/U64/CO (FA_X1)         0.07 *     0.69 f
+  dpath/sub/sub_x_1/U65/CO (FA_X1)         0.07 *     0.76 f
+  dpath/sub/sub_x_1/U66/CO (FA_X1)         0.07 *     0.84 f
+  dpath/sub/sub_x_1/U67/CO (FA_X1)         0.07 *     0.91 f
+  dpath/sub/sub_x_1/U68/CO (FA_X1)         0.07 *     0.98 f
+  dpath/sub/sub_x_1/U69/CO (FA_X1)         0.07 *     1.05 f
+  dpath/sub/sub_x_1/U70/CO (FA_X1)         0.07 *     1.12 f
+  dpath/sub/sub_x_1/U54/Z (XOR2_X1)        0.06 *     1.18 f
+  dpath/sub/sub_x_1/U55/ZN (XNOR2_X1)      0.07 *     1.25 r
+  resp_msg[15] (out)                       0.00 *     1.25 r
+  data arrival time                                   1.25
+
+  clock ideal_clock (rise edge)            2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                    0.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.75
+
+
+  Startpoint: dpath/b_reg/out_reg_0_
+              (rising edge-triggered flip-flop clocked by ideal_clock)
+  Endpoint: dpath/a_reg/out_reg_15_
+            (rising edge-triggered flip-flop clocked by ideal_clock)
+  Path Group: ideal_clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dpath/b_reg/out_reg_0_/CK (DFF_X1)       0.00       0.00 r
+  dpath/b_reg/out_reg_0_/Q (DFF_X1)        0.10       0.10 r
+  dpath/sub/sub_x_1/U53/ZN (NAND2_X1)      0.02 *     0.12 f
+  dpath/sub/sub_x_1/U57/CO (FA_X1)         0.07 *     0.19 f
+  dpath/sub/sub_x_1/U58/CO (FA_X1)         0.07 *     0.26 f
+  dpath/sub/sub_x_1/U59/CO (FA_X1)         0.07 *     0.33 f
+  dpath/sub/sub_x_1/U60/CO (FA_X1)         0.07 *     0.41 f
+  dpath/sub/sub_x_1/U61/CO (FA_X1)         0.07 *     0.48 f
+  dpath/sub/sub_x_1/U62/CO (FA_X1)         0.07 *     0.55 f
+  dpath/sub/sub_x_1/U63/CO (FA_X1)         0.07 *     0.62 f
+  dpath/sub/sub_x_1/U64/CO (FA_X1)         0.07 *     0.69 f
+  dpath/sub/sub_x_1/U65/CO (FA_X1)         0.07 *     0.76 f
+  dpath/sub/sub_x_1/U66/CO (FA_X1)         0.07 *     0.84 f
+  dpath/sub/sub_x_1/U67/CO (FA_X1)         0.07 *     0.91 f
+  dpath/sub/sub_x_1/U68/CO (FA_X1)         0.07 *     0.98 f
+  dpath/sub/sub_x_1/U69/CO (FA_X1)         0.07 *     1.05 f
+  dpath/sub/sub_x_1/U70/CO (FA_X1)         0.07 *     1.12 f
+  dpath/sub/sub_x_1/U54/Z (XOR2_X1)        0.06 *     1.18 f
+  dpath/sub/sub_x_1/U55/ZN (XNOR2_X1)      0.05 *     1.23 f
+  dpath/a_mux/U34/ZN (AOI222_X1)           0.09 *     1.32 r
+  dpath/a_mux/U35/ZN (INV_X1)              0.01 *     1.33 f
+  dpath/a_reg/out_reg_15_/D (DFF_X1)       0.00 *     1.33 f
+  data arrival time                                   1.33
+
+  clock ideal_clock (rise edge)            2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  dpath/a_reg/out_reg_15_/CK (DFF_X1)      0.00       2.00 r
+  library setup time                      -0.04       1.96
+  data required time                                  1.96
+  -----------------------------------------------------------
+  data required time                                  1.96
+  data arrival time                                  -1.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: reset[0] (input port clocked by ideal_clock)
+  Endpoint: ctrl/state/out_reg_1_
+            (rising edge-triggered flip-flop clocked by ideal_clock)
+  Path Group: REGIN
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  reset[0] (in)                            0.00       1.00 r
+  ctrl/state/out_reg_1_/D (SDFF_X1)        0.00 *     1.00 r
+  data arrival time                                   1.00
+
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctrl/state/out_reg_1_/CK (SDFF_X1)       0.00       0.00 r
+  library hold time                       -0.01      -0.01
+  data required time                                 -0.01
+  -----------------------------------------------------------
+  data required time                                 -0.01
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (MET)                                         1.02
+
+
+  Startpoint: ctrl/state/out_reg_0_
+              (rising edge-triggered flip-flop clocked by ideal_clock)
+  Endpoint: resp_val[0]
+            (output port clocked by ideal_clock)
+  Path Group: REGOUT
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctrl/state/out_reg_0_/CK (SDFF_X1)       0.00       0.00 r
+  ctrl/state/out_reg_0_/QN (SDFF_X1)       0.10       0.10 r
+  ctrl/U11/ZN (NOR2_X1)                    0.02 *     0.12 f
+  resp_val[0] (out)                        0.00 *     0.12 f
+  data arrival time                                   0.12
+
+  clock ideal_clock (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                    0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.12
+
+
+  Startpoint: ctrl/state/out_reg_1_
+              (rising edge-triggered flip-flop clocked by ideal_clock)
+  Endpoint: dpath/b_reg/clk_gate_out_reg/latch
+            (gating element for clock ideal_clock)
+  Path Group: ideal_clock
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ctrl/state/out_reg_1_/CK (SDFF_X1)                      0.00       0.00 r
+  ctrl/state/out_reg_1_/QN (SDFF_X1)                      0.09       0.09 f
+  ctrl/U15/ZN (NOR2_X1)                                   0.02 *     0.11 r
+  dpath/b_reg/clk_gate_out_reg/latch/E (CLKGATETST_X1)     0.00 *     0.11 r
+  data arrival time                                                  0.11
+
+  clock ideal_clock (rise edge)                           0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dpath/b_reg/clk_gate_out_reg/latch/CK (CLKGATETST_X1)     0.00     0.00 r
+  clock gating hold time                                 -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+    Net: dpath/a_mux/n17
+
+    max_transition         0.20
+  - Transition Time        0.13
+  ------------------------------
+    Slack                  0.06  (MET)
+
+
+    Net: dpath/n14
+
+    max_fanout            20.00
+  - Fanout                18.00
+  ------------------------------
+    Slack                  2.00  (MET)
+
+
+    Net: dpath/a_mux/n17
+
+    max_capacitance       26.70
+  - Capacitance           27.41
+  ------------------------------
+    Slack                 -0.70  (VIOLATED)
+
+
+    Design: GcdUnit
+
+    max_leakage_power          0.00
+  - Current Leakage Power   7407.11
+  ----------------------------------
+    Slack                  -7407.11  (VIOLATED)
+
+
+Min pulse width constraints
+
+                       Required      Actual
+  Pin                pulse width   pulse width   Slack           Scenario
+--------------------------------------------------------------------------------
+  dpath/a_reg/clk_gate_out_reg/latch/CK(low)  0.08  1.00  0.92 (MET)
+
+1

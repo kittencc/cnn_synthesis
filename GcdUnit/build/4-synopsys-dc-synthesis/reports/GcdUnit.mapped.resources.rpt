@@ -1,0 +1,119 @@
+ 
+****************************************
+Report : resources
+Design : GcdUnit
+Version: L-2016.03-SP5-5
+Date   : Fri Oct 21 23:07:09 2022
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : GcdUnit_GcdUnitDpathRTL_0x29124399ca008c5e_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : GcdUnit_RegEn_0x68db79c4ec1d6e5b_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : GcdUnit_RegEn_0x68db79c4ec1d6e5b_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : GcdUnit_Subtractor_0x422b1f52edd46a85_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| sub_x_1        | DW01_sub       | width=16   | sub_770 (design.v:770)     |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_x_1            | DW01_sub         | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : GcdUnit_Mux_0xdd6473406d1a99a_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : GcdUnit_Mux_0x683fa1a418b072c9_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : GcdUnit_ZeroComparator_0x422b1f52edd46a85_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : GcdUnit_LtComparator_0x422b1f52edd46a85_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| lt_x_1         | DW_cmp         | width=16   | lt_617 (design.v:617)      |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| lt_x_1             | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : GcdUnit_GcdUnitCtrlRTL_0x29124399ca008c5e_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : GcdUnit_RegRst_0x9f365fdf6c8998a_0
+****************************************
+
+No implementations to report
+1

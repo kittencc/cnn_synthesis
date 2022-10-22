@@ -6,7 +6,7 @@
 #
 # Author : Christopher Torng
 # Date   : June 2, 2019
-#
+# Commented by Cheryl (Yingqiu) Cao on 10-20-2022
 
 import os
 import sys
@@ -38,6 +38,11 @@ def construct():
   #-----------------------------------------------------------------------
 
   this_dir = os.path.dirname( os.path.abspath( __file__ ) )
+  # __file__ is the pathname of the file from which the current module was
+  # loaded.
+  # os.path.dirname points to the point dir, by removing the last segment
+  # of the path.
+
 
   # ADK step
 
@@ -55,7 +60,7 @@ def construct():
   dc           = Step( 'synopsys-dc-synthesis', default=True )
 
   #-----------------------------------------------------------------------
-  # Graph -- Add nodes
+  # Graph -- Add nodes to graph
   #-----------------------------------------------------------------------
 
   g.add_step( info         )

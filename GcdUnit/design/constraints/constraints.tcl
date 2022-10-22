@@ -18,6 +18,9 @@ create_clock -name ${clock_name} \
              -period ${dc_clock_period} \
              [get_ports ${clock_net}]
 
+             # is dc_clock_period defined in construct.py?? like a default
+             # variable name by mflowgen??
+
 # This constraint sets the load capacitance in picofarads of the
 # output pins of your design.
 

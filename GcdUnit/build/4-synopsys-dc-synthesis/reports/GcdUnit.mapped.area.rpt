@@ -1,0 +1,78 @@
+Warning: Layer 'metal1' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal2' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal3' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal4' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal5' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal6' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal7' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal8' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal9' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+Warning: Layer 'metal10' is missing the optional 'edge capacitance' attribute. (PSYN-101)
+ 
+****************************************
+Report : area
+Design : GcdUnit
+Version: L-2016.03-SP5-5
+Date   : Fri Oct 21 23:07:09 2022
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/users/ctorng/work/cc/ee272-hw5/GcdUnit/build/4-synopsys-dc-synthesis/inputs/adk/stdcells.db)
+
+Number of ports:                          481
+Number of nets:                           670
+Number of cells:                          221
+Number of combinational cells:            154
+Number of sequential cells:                54
+Number of macros/black boxes:               0
+Number of buf/inv:                         56
+Number of references:                       2
+
+Combinational area:                214.396001
+Buf/Inv area:                       30.590000
+Noncombinational area:             164.919995
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   379.315996
+Total area:                 undefined
+
+Core Area:                       636
+Aspect Ratio:                 0.9972
+Utilization Ratio:            0.5957
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 379.3
+  Total fixed cell area: 0.0
+  Total physical cell area: 379.3
+ Core area: 0.000, 0.000, 25.270, 25.200
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------------------------------------
+GcdUnit                            379.3160    100.0    0.0000     0.0000  0.0000  GcdUnit
+ctrl                                25.2700      6.7   11.9700     0.0000  0.0000  GcdUnit_GcdUnitCtrlRTL_0x29124399ca008c5e_0
+ctrl/state                          13.3000      3.5    1.0640    12.2360  0.0000  GcdUnit_RegRst_0x9f365fdf6c8998a_0
+dpath                              354.0460     93.3    1.5960     0.0000  0.0000  GcdUnit_GcdUnitDpathRTL_0x29124399ca008c5e_0
+dpath/a_lt_b                        44.6880     11.8   44.6880     0.0000  0.0000  GcdUnit_LtComparator_0x422b1f52edd46a85_0
+dpath/a_mux                         45.2200     11.9   45.2200     0.0000  0.0000  GcdUnit_Mux_0x683fa1a418b072c9_0
+dpath/a_reg                         76.3420     20.1    0.0000    72.3520  0.0000  GcdUnit_RegEn_0x68db79c4ec1d6e5b_0
+dpath/a_reg/clk_gate_out_reg         3.9900      1.1    0.0000     3.9900  0.0000  GcdUnit_SNPS_CLOCK_GATE_HIGH_RegEn_0x68db79c4ec1d6e5b_1_0
+dpath/b_mux                         29.7920      7.9   29.7920     0.0000  0.0000  GcdUnit_Mux_0xdd6473406d1a99a_0
+dpath/b_reg                         76.3420     20.1    0.0000    72.3520  0.0000  GcdUnit_RegEn_0x68db79c4ec1d6e5b_1
+dpath/b_reg/clk_gate_out_reg         3.9900      1.1    0.0000     3.9900  0.0000  GcdUnit_SNPS_CLOCK_GATE_HIGH_RegEn_0x68db79c4ec1d6e5b_0_0
+dpath/b_zero                         6.9160      1.8    6.9160     0.0000  0.0000  GcdUnit_ZeroComparator_0x422b1f52edd46a85_0
+dpath/sub                           73.1500     19.3    0.0000     0.0000  0.0000  GcdUnit_Subtractor_0x422b1f52edd46a85_0
+dpath/sub/sub_x_1                   73.1500     19.3   73.1500     0.0000  0.0000  GcdUnit_Subtractor_0x422b1f52edd46a85_DW01_sub_J1_0_0
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------------------------------------
+Total                                                 214.3960   164.9200  0.0000
+
+1
