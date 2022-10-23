@@ -1,0 +1,64 @@
+#==============================
+# HLS using Catapult
+# ============================
+# Author: Cheryl (Yingqiu) Cao
+# Date: 2022-10-22
+
+
+name: hls
+
+#-----------------------------
+# inputs
+# ---------------------------
+
+inputs:
+  - sram_64_256.v
+  - sram_64_256_TT_1p1V_25C.lib
+  - sram_512_128.v
+  - sram_512_128_TT_1p1V_25C.lib
+
+
+#-----------------------------
+# outputs
+# ---------------------------
+
+outputs:
+  - design.v
+
+
+#-----------------------------
+# commands
+# ---------------------------
+
+commands:
+  # calls Catapult to generate the RTL
+  - make
+  # create the output folder
+  - mkdir -p outputs
+  # delete the lines between "module sram_" and  "endmodule" in
+  # concat_rtl.v.
+  # delete the lines between "module unreg_hier" and "endmodule".
+  # outputs the new file to "design.v".
+  # This is to remove the memory simulation models and other weird modules
+  # Catapult created.
+  - sed '/module sram_/,/endmodule/d' build/Conv.v1/concat_rtl.v > outputs/design.v
+    #  - sed '/module sram_/,/endmodule/d;/module unreg_hier/,/endmodule/d' build/Conv.v1/concat_rtl.v > outputs/design.v
+
+
+
+#-------------------------------------------------------------------------
+# Parameters
+#-------------------------------------------------------------------------
+
+parameters:
+  clock_period: 1.0
+
+
+#-------------------------------------------------------------------------
+# Debug
+#-------------------------------------------------------------------------
+
+debug:
+  - make gui-----------------------------
+
+

@@ -20,7 +20,8 @@ flow package option set /SCVerify/USE_MSIM false
 flow package require /NCSim
 
 solution options set Flows/NCSim/NC_ROOT /cad/cadence/INCISIVE15.20.022/
-
+# add the generated SRAM cells as library files
+solution options set ComponentLibs/SearchPath {/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs} -append
 
 # Delete solution if already exists
 catch {

@@ -74,12 +74,15 @@ go architect
 # If you try to schedule with an initiation interval of 1, you might run into a dependency error involving the accumulation buffer
 # To solve this, you need to use 'ignore_memory_precedences'
 # -------------------------------
-ignore_memory_precedences -from step:if#3:for:write_mem(accum_buf:rsc(0)(0).@) -to step:if#2:else:for:read_mem(accum_buf:rsc(0)(0).@)
+#ignore_memory_precedences -from write_accum* -to read_accum*
+ignore_memory_precedences -from step:if#3:for:write_mem(accum_buf:rsc.@)#15 -to step:if#2:else:for:read_mem(accum_buf:rsc.@)
+
+#ignore_memory_precedences -from step:if#3:for:write_mem(accum_buf:rsc(0)(0).@) -to step:if#2:else:for:read_mem(accum_buf:rsc(0)(0).@)
 
 
-for {set i 1} {$i < 16} {incr i} {
-  ignore_memory_precedences -from step:if#3:for:write_mem(accum_buf:rsc(0)($i).@)#$i -to step:if#2:else:for:read_mem(accum_buf:rsc(0)($i).@)#$i
-}
+#for {set i 1} {$i < 16} {incr i} {
+#  ignore_memory_precedences -from step:if#3:for:write_mem(accum_buf:rsc(0)($i).@)#$i -to step:if#2:else:for:read_mem(accum_buf:rsc(0)($i).@)#$i
+#}
 
 # -------------------------------
 

@@ -1,0 +1,151 @@
+//  Catapult Ultra Synthesis 10.4b/841621 (Production Release) Thu Oct 24 17:20:07 PDT 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//                        UNPUBLISHED, LICENSED SOFTWARE.
+//             CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//                 PROPERTY OF MENTOR GRAPHICS OR ITS LICENSORS
+//  
+//  Running on Linux ctorng@caddy01 3.10.0-1160.76.1.el7.x86_64 x86_64 aol
+//  
+//  Package information: SIFLIBS v23.4_2.0, HLS_PKGS v23.4_2.0, 
+//                       SIF_TOOLKITS v23.4_2.0, SIF_XILINX v23.4_2.0, 
+//                       SIF_ALTERA v23.4_2.0, CCS_LIBS v23.4_2.0, 
+//                       CDS_PPRO v10.3a_3, CDS_DesigChecker v10.4b, 
+//                       CDS_OASYS v19.1_2.4, CDS_PSR v19.1_1.16, 
+//                       DesignPad v2.78_1.0
+//  
+//  Start time Sat Oct 22 23:42:06 2022
+# -------------------------------------------------
+# Logging session transcript to file "/tmp/log5976742bdac8.0"
+# Moving session transcript to file "/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/catapult.log"
+# Warning: No Encrypted Liberty technology libraries have been specified (LIB-192)
+# Warning: No Process Technology File (PTF) technology libraries have been specified (LIB-192)
+# Warning: No Synopsys DB technology libraries have been specified (LIB-192)
+# Warning: No Encrypted Liberty technology libraries have been specified (LIB-192)
+# Warning: No Process Technology File (PTF) technology libraries have been specified (LIB-192)
+# Warning: No Synopsys DB technology libraries have been specified (LIB-192)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/ProcessingElementless_IDTYPEcomma_WDTYPEcomma_ODTYPEgreater_.v1/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_16__221b3917049bbc5c28349b3242b352d67c53_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_15__0588a2793143081c26ab62d19350374879f4_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_14__45e500b517c70224a67c6e90729192d87795_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_13__cfc4e6d714c299c88f1ea11a4aa19dcd7536_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_12__20588fe682fdeb9113d6793626c8c22872d7_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_11__917724a8fd2b9046ed510e9c8c2f6e0c7078_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_10__98cb450ab203be4fbf6a1bbccd8ea7be6e1a_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_9__59d17ff0eccb20043113c483bd4832ad6bb0_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_8__fe12db0fc7a2f935da96abaa8a4058ea6952_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_7__d003a84803bb8a29bae7687df0b778f666f4_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_6__ef9cbbb510dc9b7e23fbd9ad2a0b75166496_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_5__3e4e6554e1972e837dfae32d6649bb6d6238_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_4__156db601d575e3447c254544adc35f885fda_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_3__7b12ca58716272e54ee61060556848705d7c_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_2__d9255459d1985bba09ce948bd73b39735b1e_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_ODTYPE_1__9c4a99f532013522e5120280b322b342544e_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_16__d38d5c3f7f7d770ed3944fd5fef6db0b7c26_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_15__a3693e6df94c682291b73c0533bd535379c8_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_14__6ed558445f9b0ba26813510e683ff2e6776a_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_13__3ab39e6656c571656f9f918808a98c90750c_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_12__41334737f9db89f3401ddbdb180284a372ae_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_11__b143065b8a794d7c3150cb2396006f267050_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_10__2ffa16ce99a732e8d71a5f721f0f2d316df3_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_9__3850d4c5a858cb636c57c5c7832e8f086b8a_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_8__088804bffe2cbc7474b0591ee11c8c42692d_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_7__219aaa96b5533f6efa14178ba0ae3f9266d0_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_6__4caa842e06e3cce2ef6eb0925cfd318a6473_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_5__74b9abe40f59f3bac195e723964a8a776216_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_4__99dd0c69a5e527ded4c3d01075afb99b5fb9_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_3__9ab5ce9495ab244439c9135630c9d9035d5c_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_2__e3a3a79fd6d2b9552fe00c731f1f97345afd_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/td_ccore_solutions/Fifo_IDTYPE_1__93d204e0bede44f1c5761a5d5c8023bb542f_0/solIndex.xml' ... (LIB-129)
+flow package require MemGen
+# 10.0.0
+design state not valid to run flowdesign state not valid to run flowflow package require MemGen
+# 10.0.0
+design state not valid to run flowgo compile
+solution library remove *
+# Info: Branching solution 'SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>.v2' at state 'compile' (PRJ-2)
+# Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Warning: Toplevel found in header $PROJECT_HOME/src/SystolicArrayCore.h, using $PROJECT_HOME/src/Conv.cpp for header dependencies.
+# Info: CDesignChecker Shell script written to '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build/SystolicArrayCoreless_IDTYPEcomma_WDTYPEcomma_ODTYPEcomma_16comma_16greater_.v2/CDesignChecker/design_checker.sh'
+solution library add nangate-45nm_beh -- -rtlsyntool DesignCompiler
+solution library add ccs_sample_mem
+solution library add {[CCORE] ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1} -- -vendor Nangate -technology 045nm
+flow package require MemGen
+# 10.0.0
+# Warning: MemoryGenerator_Seed FILES GIVEN
+# Warning: MemoryGenerator_Seed MAKING BLANK LIB
+# Info:  Analyzing source file "/home/users/ctorng/work/cc/ee272-hw5/Conv/build/3-sram/outputs/sram_512_128.v" .... (HDL-1)
+# Info: $PROJECT_HOME/../../build/3-sram/outputs/sram_512_128.v(5):  Analyzing module ( sram_512_128 ). (HDL-4)
+# Info:  0 error(s)   0 warning(s). (HDL-25)
+flow run /MemGen/MemoryGenerator_BuildLibWithTempDir {RTLTOOL DesignCompiler VENDOR * TECHNOLOGY * OUTPUT_DIR /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs MODULE sram_512_128 LIBRARY sram_512_128 WIDTH 128 DEPTH 512 AREA 0 RDWRRESOLUTION UNKNOWN READLATENCY 1 WRITELATENCY 1 TIMEUNIT 1ns READDELAY 0.1 WRITEDELAY 0.1 INPUTDELAY 0.01 INITDELAY 1 VHDLARRAYPATH {} VERILOGARRAYPATH {} FILES {{FILENAME /home/users/ctorng/work/cc/ee272-hw5/Conv/build/3-sram/outputs/sram_512_128.v FILETYPE Verilog MODELTYPE generic PARSE 1 PATHTYPE copy STATICFILE 1 VHDL_LIB_MAPS work}} PARAMETERS {{PARAMETER DATA_WIDTH TYPE hdl IGNORE 0 MIN {} MAX {} DEFAULT 128} {PARAMETER ADDR_WIDTH TYPE hdl IGNORE 0 MIN {} MAX {} DEFAULT 9} {PARAMETER RAM_DEPTH TYPE hdl IGNORE 1 MIN {} MAX {} DEFAULT 0} {PARAMETER DELAY TYPE hdl IGNORE 1 MIN {} MAX {} DEFAULT 3}} PORTS {{NAME port_0 MODE ReadWrite}} PINMAPS {{PHYPIN clk0 LOGPIN CLOCK DIRECTION in WIDTH 1.0 PHASE 1 DEFAULT {} PORTS port_0} {PHYPIN csb0 LOGPIN CHIP_SELECT DIRECTION in WIDTH 1.0 PHASE 0 DEFAULT {} PORTS {}} {PHYPIN web0 LOGPIN WRITE_ENABLE DIRECTION in WIDTH 1.0 PHASE 0 DEFAULT {} PORTS port_0} {PHYPIN addr0 LOGPIN ADDRESS DIRECTION in WIDTH ADDR_WIDTH PHASE {} DEFAULT {} PORTS port_0} {PHYPIN din0 LOGPIN DATA_IN DIRECTION in WIDTH DATA_WIDTH PHASE {} DEFAULT {} PORTS port_0} {PHYPIN dout0 LOGPIN DATA_OUT DIRECTION out WIDTH DATA_WIDTH PHASE {} DEFAULT {} PORTS port_0}}} /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/memgen_sram_512_128_DesignCompiler_1666508776
+# Warning: MemoryGenerator_Seed FILES GIVEN
+# Warning: MemoryGenerator_Seed MAKING BLANK LIB
+# Info:  Analyzing source file "/home/users/ctorng/work/cc/ee272-hw5/Conv/build/3-sram/outputs/sram_512_128.v" .... (HDL-1)
+# Info: $PROJECT_HOME/../../build/3-sram/outputs/sram_512_128.v(5):  Analyzing module ( sram_512_128 ). (HDL-4)
+# Info:  0 error(s)   0 warning(s). (HDL-25)
+# Initializing HDL generic/parameter 'RAM_DEPTH' with '0'
+# Initializing HDL generic/parameter 'DELAY' with '3'
+# Copying file sram_512_128.v...
+# Info: Generating SystemC models
+# Info: Writing systemC model of 'sram_512_128' to '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/memgen_sram_512_128_DesignCompiler_1666508776/sram_512_128.h' (MGEN-14)
+# Writing component library 'sram_512_128' (license: LIBRARY_BUILDER=catapultlbcustom)... (LIB-51)
+# Component library written to '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/memgen_sram_512_128_DesignCompiler_1666508776/sram_512_128.lib' (LIB-52)
+# Memory generation complete.  Files moved to output directory '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs'.
+solution library remove *
+solution library add nangate-45nm_beh -- -rtlsyntool DesignCompiler
+solution library add ccs_sample_mem
+solution library add {[Block] InputDoubleBuffer<512,16,16>.v1} -- -vendor Nangate -technology 045nm
+solution library add {[CCORE] ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1}
+solution library add {[Block] SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>.v1}
+solution library add {[Block] WeightDoubleBuffer<512,16,16>.v1}
+solution options set ComponentLibs/SearchPath {/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs} -append
+# {$MGC_HOME/pkgs/siflibs} {$MGC_HOME/shared/include/calypto_mem} {$MGC_HOME/pkgs/siflibs/designcompiler} {$MGC_HOME/pkgs/siflibs/rtlcompiler} {$MGC_HOME/pkgs/siflibs/oasysrtl} {$MGC_HOME/pkgs/siflibs/nangate} {$MGC_HOME/pkgs/ccs_altera} {$MGC_HOME/pkgs/ccs_xilinx} {$MGC_HOME/pkgs/siflibs/synplifypro} {$MGC_HOME/pkgs/siflibs/origami} {$MGC_HOME/pkgs/siflibs/microsemi} {$MGC_HOME/pkgs/ccs_libs/interfaces/amba} /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs
+flow package require MemGen
+# 10.0.0
+# Warning: MemoryGenerator_Seed FILES GIVEN
+# Warning: MemoryGenerator_Seed MAKING BLANK LIB
+# Info:  Analyzing source file "/home/users/ctorng/work/cc/ee272-hw5/Conv/build/3-sram/outputs/sram_64_256.v" .... (HDL-1)
+# Info: $PROJECT_HOME/../../build/3-sram/outputs/sram_64_256.v(6):  Analyzing module ( sram_64_256 ). (HDL-4)
+# Error: $PROJECT_HOME/../../build/3-sram/outputs/sram_64_256.v(39):  Identifier ( mem ) not declared in current scope. (HDL-606)
+# Info:  1 error(s)   0 warning(s). (HDL-25)
+library import: Error reading filesflow package require MemGen
+# 10.0.0
+# Warning: MemoryGenerator_Seed FILES GIVEN
+# Warning: MemoryGenerator_Seed MAKING BLANK LIB
+# Info:  Analyzing source file "/home/users/ctorng/work/cc/ee272-hw5/Conv/build/3-sram/outputs/sram_64_256.v" .... (HDL-1)
+# Info: $PROJECT_HOME/../../build/3-sram/outputs/sram_64_256.v(6):  Analyzing module ( sram_64_256 ). (HDL-4)
+# Info:  0 error(s)   0 warning(s). (HDL-25)
+flow run /MemGen/MemoryGenerator_BuildLibWithTempDir {RTLTOOL DesignCompiler VENDOR * TECHNOLOGY * OUTPUT_DIR /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs MODULE sram_64_256 LIBRARY sram_64_256 WIDTH 256 DEPTH 64 AREA 0 RDWRRESOLUTION UNKNOWN READLATENCY 1 WRITELATENCY 1 TIMEUNIT 1ns READDELAY 0.1 WRITEDELAY 0.1 INPUTDELAY 0.01 INITDELAY 1 VHDLARRAYPATH {} VERILOGARRAYPATH {} FILES {{FILENAME /home/users/ctorng/work/cc/ee272-hw5/Conv/build/3-sram/outputs/sram_64_256.v FILETYPE Verilog MODELTYPE generic PARSE 1 PATHTYPE copy STATICFILE 1 VHDL_LIB_MAPS work}} PARAMETERS {{PARAMETER DATA_WIDTH TYPE hdl IGNORE 0 MIN {} MAX {} DEFAULT 256} {PARAMETER ADDR_WIDTH TYPE hdl IGNORE 0 MIN {} MAX {} DEFAULT 6} {PARAMETER RAM_DEPTH TYPE hdl IGNORE 1 MIN {} MAX {} DEFAULT 0} {PARAMETER DELAY TYPE hdl IGNORE 1 MIN {} MAX {} DEFAULT 0}} PORTS {{NAME port_0 MODE ReadWrite}} PINMAPS {{PHYPIN clk0 LOGPIN CLOCK DIRECTION in WIDTH 1.0 PHASE 1 DEFAULT {} PORTS port_0} {PHYPIN csb0 LOGPIN CHIP_SELECT DIRECTION in WIDTH 1.0 PHASE 0 DEFAULT {} PORTS {}} {PHYPIN web0 LOGPIN WRITE_ENABLE DIRECTION in WIDTH 1.0 PHASE 0 DEFAULT {} PORTS port_0} {PHYPIN addr0 LOGPIN ADDRESS DIRECTION in WIDTH ADDR_WIDTH PHASE {} DEFAULT {} PORTS port_0} {PHYPIN din0 LOGPIN DATA_IN DIRECTION in WIDTH DATA_WIDTH PHASE {} DEFAULT {} PORTS port_0} {PHYPIN dout0 LOGPIN DATA_OUT DIRECTION out WIDTH DATA_WIDTH PHASE {} DEFAULT {} PORTS port_0}}} /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/memgen_sram_64_256_DesignCompiler_1666509557
+# Warning: MemoryGenerator_Seed FILES GIVEN
+# Warning: MemoryGenerator_Seed MAKING BLANK LIB
+# Info:  Analyzing source file "/home/users/ctorng/work/cc/ee272-hw5/Conv/build/3-sram/outputs/sram_64_256.v" .... (HDL-1)
+# Info: $PROJECT_HOME/../../build/3-sram/outputs/sram_64_256.v(6):  Analyzing module ( sram_64_256 ). (HDL-4)
+# Info:  0 error(s)   0 warning(s). (HDL-25)
+# Initializing HDL generic/parameter 'RAM_DEPTH' with '0'
+# Initializing HDL generic/parameter 'DELAY' with '0'
+# Copying file sram_64_256.v...
+# Info: Generating SystemC models
+# Info: Writing systemC model of 'sram_64_256' to '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/memgen_sram_64_256_DesignCompiler_1666509557/sram_64_256.h' (MGEN-14)
+# Writing component library 'sram_64_256' (license: LIBRARY_BUILDER=catapultlbcustom)... (LIB-51)
+# Component library written to '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/memgen_sram_64_256_DesignCompiler_1666509557/sram_64_256.lib' (LIB-52)
+# Memory generation complete.  Files moved to output directory '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs'.
+solution options set ComponentLibs/SearchPath /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs -append
+# {$MGC_HOME/pkgs/siflibs} {$MGC_HOME/shared/include/calypto_mem} {$MGC_HOME/pkgs/siflibs/designcompiler} {$MGC_HOME/pkgs/siflibs/rtlcompiler} {$MGC_HOME/pkgs/siflibs/oasysrtl} {$MGC_HOME/pkgs/siflibs/nangate} {$MGC_HOME/pkgs/ccs_altera} {$MGC_HOME/pkgs/ccs_xilinx} {$MGC_HOME/pkgs/siflibs/synplifypro} {$MGC_HOME/pkgs/siflibs/origami} {$MGC_HOME/pkgs/siflibs/microsemi} {$MGC_HOME/pkgs/ccs_libs/interfaces/amba} /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs
+solution library remove *
+solution library add nangate-45nm_beh -- -rtlsyntool DesignCompiler
+solution library add ccs_sample_mem
+solution library add {[Block] InputDoubleBuffer<512,16,16>.v1} -- -vendor Nangate -technology 045nm
+solution library add {[CCORE] ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1}
+solution library add {[Block] WeightDoubleBuffer<512,16,16>.v1}
+solution options set ComponentLibs/SearchPath /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls -remove
+# {$MGC_HOME/pkgs/siflibs} {$MGC_HOME/shared/include/calypto_mem} {$MGC_HOME/pkgs/siflibs/designcompiler} {$MGC_HOME/pkgs/siflibs/rtlcompiler} {$MGC_HOME/pkgs/siflibs/oasysrtl} {$MGC_HOME/pkgs/siflibs/nangate} {$MGC_HOME/pkgs/ccs_altera} {$MGC_HOME/pkgs/ccs_xilinx} {$MGC_HOME/pkgs/siflibs/synplifypro} {$MGC_HOME/pkgs/siflibs/origami} {$MGC_HOME/pkgs/siflibs/microsemi} {$MGC_HOME/pkgs/ccs_libs/interfaces/amba} /home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/mem_outputs
+solution library remove *
+solution library add nangate-45nm_beh -- -rtlsyntool DesignCompiler
+solution library add {[Block] InputDoubleBuffer<512,16,16>.v1} -- -vendor Nangate -technology 045nm
+solution library add {[CCORE] ProcessingElement<IDTYPE,WDTYPE,ODTYPE>.v1}
+solution library add {[Block] WeightDoubleBuffer<512,16,16>.v1}
+solution library add sram_512_128
+solution library add sram_64_256
+quit
+# Saving project file '/home/users/ctorng/work/cc/ee272-hw5/Conv/design/hls/build.ccs'. (PRJ-5)
+// Finish time Sun Oct 23 00:27:56 2022, time elapsed 45:50, peak memory 1.43GB, exit status 0

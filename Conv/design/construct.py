@@ -48,6 +48,7 @@ def construct():
   sram         = Step( this_dir + '/sram'        )
 #  rtl          = Step( this_dir + '/rtl'         )
   constraints  = Step( this_dir + '/constraints' )
+  hls          = Step( this_dir + '/hls' )
 
   # Default steps
 
@@ -61,6 +62,7 @@ def construct():
   g.add_step( info         )
   g.add_step( sram         )
 #  g.add_step( rtl          )
+  g.add_step( hls          )
   g.add_step( constraints  )
   g.add_step( dc           )
 
@@ -73,6 +75,7 @@ def construct():
 #  g.connect_by_name( rtl,         dc           )
   g.connect_by_name( adk,         dc           )
   g.connect_by_name( constraints, dc           )
+  g.connect_by_name( sram,        hls)
 
   # Dynamically add edges
 
