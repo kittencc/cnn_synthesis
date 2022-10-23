@@ -1,0 +1,43 @@
+#=========================================================================
+# OpenRAM SRAM Compiler 
+#=========================================================================
+# Author : Cheryl (Yingqiu) Cao
+# Date   : 2022-10-22
+#
+
+name: sram
+
+#-------------------------------------------------------------------------
+# Outputs
+#-------------------------------------------------------------------------
+
+outputs:
+  # for the 4096 x 128 SRAM
+  - sram_512_128.sp
+  - sram_512_128.v
+  - sram_512_128.lib
+  - sram_512_128.lef
+  - sram_512_128_TT_1p1V_25C.lib
+  - sram_512_128_TT_1p1V_25C.db
+  - sram_512_128.gds
+  # for the 256 x 256 SRAM
+  - sram_64_256.sp
+  - sram_64_256.v
+  - sram_64_256.lib
+  - sram_64_256.lef
+  - sram_64_256_TT_1p1V_25C.lib
+  - sram_64_256_TT_1p1V_25C.db
+  - sram_64_256.gds
+
+
+#-------------------------------------------------------------------------
+# Commands
+#-------------------------------------------------------------------------
+
+commands:
+  # Run OpenRAM first to create the outputs
+  - python3 $OPENRAM_HOME/openram.py sramconfig_512_128.py
+  - python3 $OPENRAM_HOME/openram.py sramconfig_64_256.py
+
+  # Use Synopsys Library Compiler to create a db file
+  - ./convert_lib_to_db.sh outputs
