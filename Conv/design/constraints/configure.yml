@@ -19,5 +19,6 @@ outputs:
 #-------------------------------------------------------------------------
 
 parameters:
-  clock_period: 1.0
+  # clock period in ns
+  clock_period: 100.0
   design_name: undefined

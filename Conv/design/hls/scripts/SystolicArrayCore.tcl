@@ -43,9 +43,6 @@ directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run -CLOCK_OVERHEAD
 # BLOCK_SIZE == buffer_size/interleave, here buffer_size = 4096
 #directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/accum_buf:rsc -BLOCK_SIZE 256
 directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/accum_buf -WORD_WIDTH 256
-# this is an atempt to resolve the read/write conflict for single port
-# SRAM
-directive set /SystolicArrayCore<IDTYPE,WDTYPE,ODTYPE,16,16>/run/accum_buf:rsc -INTERLEAVE 2 
 
 #return -code error "Remove this once implemented."
 # -------------------------------

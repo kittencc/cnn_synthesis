@@ -31,6 +31,9 @@ outputs:
 # ---------------------------
 
 commands:
+  #  # import the memories into Catapult
+  # - catapult -shell -file mem_outputs/sram_512_128.tcl
+  # - catapult -shell -file mem_outputs/sram_64_256.tcl
   # calls Catapult to generate the RTL
   - make
   # create the output folder
