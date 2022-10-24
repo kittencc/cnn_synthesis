@@ -27,7 +27,7 @@ def construct():
   parameters = {
     'construct_path' : __file__,
     'design_name'    : 'Conv',
-    'clock_period'   : 2.0,
+    'clock_period'   : 5.0,
     'adk'            : adk_name,
     'adk_view'       : adk_view,
     'topographical'  : True,
@@ -72,14 +72,15 @@ def construct():
 
   # Connect by name
 
+  g.connect_by_name( sram,        hls)
 #  g.connect_by_name( rtl,         dc           )
   g.connect_by_name( adk,         dc           )
   g.connect_by_name( constraints, dc           )
-  g.connect_by_name( sram,        hls)
+  g.connect_by_name( hls,         dc           )
 
   # Dynamically add edges
-
-  dc.extend_inputs(['sram_TT_1p1V_25C.db'])
+  dc.extend_inputs(['sram_512_128_TT_1p1V_25C.db'])
+  dc.extend_inputs(['sram_64_256_TT_1p1V_25C.db'])
   g.connect_by_name(sram, dc)
 
   #-----------------------------------------------------------------------
