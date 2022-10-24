@@ -2,6 +2,7 @@
 // Words: 512
 // Word size: 128
 
+// synopsys translate_off
 module sram_512_128(
 // Port 0: RW
     clk0,csb0,web0,addr0,din0,dout0
@@ -60,4 +61,5 @@ module sram_512_128(
   end
 
 endmodule
+// synopsys translate_on
 

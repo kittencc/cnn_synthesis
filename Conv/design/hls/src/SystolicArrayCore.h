@@ -2,6 +2,8 @@
 //              - performs MAC operation for one cnn iteration
 // Author: Cheryl (Yingqiu) Cao
 // Date: 2022-09-11
+// Update: relaxed the init interval request on 2022-10-23 due to single port
+// SRAM for accum_buf.
 
 #ifndef SYSTOLIC_ARRAY_CORE_H
 #define SYSTOLIC_ARRAY_CORE_H
@@ -37,7 +39,7 @@ public:
     SystolicArrayCore() {}
 
 #pragma hls_design interface
-#pragma hls_pipeline_init_interval 1
+//#pragma hls_pipeline_init_interval 1
     void run(
         ac_channel<PackedInt<INPUT_PRECISION, IC0> > &input,
         ac_channel<PackedInt<WEIGHT_PRECISION, OC0> > &weight,
@@ -85,7 +87,7 @@ public:
             // convolved with one weight which is currently active.
 
             #pragma hls_unroll no
-            #pragma hls_pipeline_init_interval 1
+            //#pragma hls_pipeline_init_interval 1
             LABEL(step) for(uint_16 step = 0; step < flush_time + num_pixels; step++ ){
 
             // -------------------------------
