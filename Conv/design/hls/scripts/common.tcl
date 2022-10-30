@@ -37,10 +37,10 @@ catch {
 # -return leaf: only returns the path name after the last directory
 # seperator.
 
-set clk_period 5.0
+# set clk_period 5.0
 #  This read clock_period as a parameter.
 #  The parameter is defined in configure.yml for the hls node
-# set clk_period $::env(clock_period)
+set clk_period $::env(clock_period)
 
 set clocks "clk \"-CLOCK_PERIOD $clk_period -CLOCK_EDGE rising -CLOCK_HIGH_TIME [expr $clk_period/2] -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high\" "
 
