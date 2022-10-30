@@ -1,6 +1,7 @@
 # export MFLOWGEN_HOME=/afs/ir/class/ee272/mflowgen
 
-export MFLOWGEN_HOME=/home/users/ctorng/work/cc/mflowgen
+#export MFLOWGEN_HOME=/home/users/ctorng/work/cc/mflowgen
+export MFLOWGEN_HOME=/sim/ctorng/cc/mflowgen
 
 export OPENRAM_HOME=/afs/ir/class/ee272/OpenRAM/compiler
 export OPENRAM_TECH=/afs/ir/class/ee272/OpenRAM/technology
