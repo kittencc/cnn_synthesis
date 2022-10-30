@@ -3,6 +3,10 @@
 
 
 set blockname [file rootname [file tail [info script] ]]
+# info script: gets the full name of the script that the runtime is
+# launched from.
+# file tail: gets filename after the last directory separator.
+# file rootname: gets filename before the . seperator
 
 source scripts/common.tcl
 

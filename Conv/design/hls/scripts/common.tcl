@@ -28,7 +28,14 @@ solution options set ComponentLibs/SearchPath ./mem_outputs -append
 catch {
     set existing_solution [project get /SOLUTION/$blockname* -match glob -return leaf]
     solution remove -solution $existing_solution -delete
+    # -delete: also remove the solution files
 }
+# Catapult saves project info in Key/Value pairs in SIF. Keys are the
+# paths that hold the values. You can access the value by searching for
+# the path.
+# -math glob: allows wild card (* or ..) in the search path
+# -return leaf: only returns the path name after the last directory
+# seperator.
 
 set clk_period 5.0
 #  This read clock_period as a parameter.
